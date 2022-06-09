@@ -5,7 +5,7 @@ E-mail:1067065568@qq.com
 
 import unittest
 import os
-from HTMLTestRunnerNew import HTMLTestRunner
+from lib.HTMLTestRunnerNew import HTMLTestRunner
 from com import contant
 # 创建测试套件
 suite = unittest.TestSuite()

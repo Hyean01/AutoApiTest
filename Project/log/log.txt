@@ -4075,3 +4075,1001 @@
 [2020-10-28 16:43:51,271] [urllib3.connectionpool] [DEBUG] [line:428]: http://api.lemonban.com:80 "POST /futureloan/member/invest HTTP/1.1" 200 None
 [2020-10-28 16:43:51,349] [root] [INFO] [line:136]: 用例[投资失败--标状态不是【竞标中】]执行成功
 [2020-10-28 16:43:51,349] [root] [INFO] [line:137]: 实际运行结果是{'code': 2, 'msg': '该项目不在竞标中状态', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:25:55,844] [root] [INFO] [line:30]: ********************开始执行登录接口测试用例********************
+[2022-06-09 10:25:55,856] [root] [INFO] [line:42]: 开始执行用例[登录成功]，用例参数为:{'mobile_phone': '13012345678', 'pwd': '12344321'}
+[2022-06-09 10:25:55,856] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:25:55,924] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/login HTTP/1.1" 200 None
+[2022-06-09 10:25:56,004] [root] [INFO] [line:52]: 用例[登录成功]执行失败
+[2022-06-09 10:25:56,004] [root] [INFO] [line:53]: 预期结果——>{'code': 0, 'msg': 'OK'}
+[2022-06-09 10:25:56,004] [root] [INFO] [line:54]: 实际结果——>{'code': 1001, 'msg': '账号信息错误', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:25:56,014] [root] [INFO] [line:42]: 开始执行用例[登录失败--手机号为空]，用例参数为:{'mobile_phone': '', 'pwd': '12344322'}
+[2022-06-09 10:25:56,014] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:25:56,024] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/login HTTP/1.1" 200 None
+[2022-06-09 10:25:56,114] [root] [INFO] [line:58]: 用例[登录失败--手机号为空]执行成功
+[2022-06-09 10:25:56,114] [root] [INFO] [line:59]: 实际运行结果是{'code': 1, 'msg': '手机号码为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:25:56,114] [root] [INFO] [line:42]: 开始执行用例[登录失败--密码为空]，用例参数为:{'mobile_phone': '13012345678', 'pwd': ''}
+[2022-06-09 10:25:56,114] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:25:56,134] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/login HTTP/1.1" 200 None
+[2022-06-09 10:25:56,214] [root] [INFO] [line:58]: 用例[登录失败--密码为空]执行成功
+[2022-06-09 10:25:56,214] [root] [INFO] [line:59]: 实际运行结果是{'code': 1, 'msg': '密码为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:25:56,214] [root] [INFO] [line:42]: 开始执行用例[登录失败--手机号+密码为空]，用例参数为:{'mobile_phone': '', 'pwd': ''}
+[2022-06-09 10:25:56,214] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:25:56,234] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/login HTTP/1.1" 200 None
+[2022-06-09 10:25:56,314] [root] [INFO] [line:58]: 用例[登录失败--手机号+密码为空]执行成功
+[2022-06-09 10:25:56,314] [root] [INFO] [line:59]: 实际运行结果是{'code': 1, 'msg': '手机号码为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:25:56,314] [root] [INFO] [line:42]: 开始执行用例[登录失败--账号未注册]，用例参数为:{'mobile_phone': '13012345670', 'pwd': '12344325'}
+[2022-06-09 10:25:56,314] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:25:56,364] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/login HTTP/1.1" 200 None
+[2022-06-09 10:25:56,484] [root] [INFO] [line:58]: 用例[登录失败--账号未注册]执行成功
+[2022-06-09 10:25:56,484] [root] [INFO] [line:59]: 实际运行结果是{'code': 1001, 'msg': '账号信息错误', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:25:56,484] [root] [INFO] [line:42]: 开始执行用例[登录失败--手机号格式不对]，用例参数为:{'mobile_phone': '130123456700', 'pwd': '12344326'}
+[2022-06-09 10:25:56,484] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:25:56,504] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/login HTTP/1.1" 200 None
+[2022-06-09 10:25:56,584] [root] [INFO] [line:58]: 用例[登录失败--手机号格式不对]执行成功
+[2022-06-09 10:25:56,584] [root] [INFO] [line:59]: 实际运行结果是{'code': 2, 'msg': '无效的手机格式', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:25:56,584] [root] [INFO] [line:42]: 开始执行用例[登录失败--密码错误]，用例参数为:{'mobile_phone': '13012345678', 'pwd': '12344323'}
+[2022-06-09 10:25:56,584] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:25:56,644] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/login HTTP/1.1" 200 None
+[2022-06-09 10:25:56,724] [root] [INFO] [line:58]: 用例[登录失败--密码错误]执行成功
+[2022-06-09 10:25:56,724] [root] [INFO] [line:59]: 实际运行结果是{'code': 1001, 'msg': '账号信息错误', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:25:56,724] [root] [INFO] [line:37]: ********************开始执行充值接口测试用例********************
+[2022-06-09 10:25:56,724] [root] [INFO] [line:43]: 开始执行注册用例，用例参数为:{'mobile_phone': '18558362135', 'pwd': '123456789', 'type': 0, 'reg_name': 'hyean'}
+[2022-06-09 10:25:56,724] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:25:56,789] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/register HTTP/1.1" 200 None
+[2022-06-09 10:25:56,789] [root] [INFO] [line:45]: 注册用例执行成功，注册结果返回{'code': 0, 'msg': 'OK', 'data': {'id': 324344, 'reg_name': 'hyean', 'mobile_phone': '18558362135'}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:25:56,789] [root] [INFO] [line:56]: 开始执行登录用例，用例参数为:{'mobile_phone': '18558362135', 'pwd': '123456789'}
+[2022-06-09 10:25:56,794] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:25:56,844] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/login HTTP/1.1" 200 None
+[2022-06-09 10:25:56,844] [root] [INFO] [line:58]: 登录用例执行成功，登录结果返回{'code': 0, 'msg': 'OK', 'data': {'id': 324344, 'leave_amount': 0.0, 'mobile_phone': '18558362135', 'reg_name': 'hyean', 'reg_time': '2022-06-09 10:25:56.0', 'type': 0, 'token_info': {'token_type': 'Bearer', 'expires_in': '2022-06-09 10:30:56', 'token': 'eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjMyNDM0NCwiZXhwIjoxNjU0NzQxODU2fQ.YcL_A1oTL4Z8sCKlduoqv9Osd1R1M4T6QUYgpKFeVBb5wV5Iv2F_LuLfeBB20ngXemjuGwlaOKdK8SmXFq7K5A'}}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:25:56,844] [root] [INFO] [line:67]: 登录执行成功，可用于鉴权的token值为 Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjMyNDM0NCwiZXhwIjoxNjU0NzQxODU2fQ.YcL_A1oTL4Z8sCKlduoqv9Osd1R1M4T6QUYgpKFeVBb5wV5Iv2F_LuLfeBB20ngXemjuGwlaOKdK8SmXFq7K5A
+[2022-06-09 10:25:56,844] [root] [INFO] [line:90]: 开始执行用例[充值成功]，用例参数为:{'member_id': 324344, 'amount': 200000}
+[2022-06-09 10:25:56,854] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:25:56,874] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/recharge HTTP/1.1" 200 None
+[2022-06-09 10:25:56,964] [root] [INFO] [line:105]: 用例[充值成功]执行成功
+[2022-06-09 10:25:56,964] [root] [INFO] [line:106]: 实际运行结果是{'code': 0, 'msg': 'OK', 'data': {'id': 324344, 'leave_amount': 200000.0, 'mobile_phone': '18558362135', 'reg_name': 'hyean', 'reg_time': '2022-06-09 10:25:56.0', 'type': 0}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:25:56,964] [root] [INFO] [line:90]: 开始执行用例[充值成功--金额为0.1]，用例参数为:{'member_id': 324344, 'amount': 0.1}
+[2022-06-09 10:25:56,964] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:25:56,994] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/recharge HTTP/1.1" 200 None
+[2022-06-09 10:25:57,099] [root] [INFO] [line:105]: 用例[充值成功--金额为0.1]执行成功
+[2022-06-09 10:25:57,099] [root] [INFO] [line:106]: 实际运行结果是{'code': 0, 'msg': 'OK', 'data': {'id': 324344, 'leave_amount': 200000.1, 'mobile_phone': '18558362135', 'reg_name': 'hyean', 'reg_time': '2022-06-09 10:25:56.0', 'type': 0}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:25:57,099] [root] [INFO] [line:90]: 开始执行用例[充值成功--金额为50万]，用例参数为:{'member_id': 324344, 'amount': 500000}
+[2022-06-09 10:25:57,099] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:25:57,124] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/recharge HTTP/1.1" 200 None
+[2022-06-09 10:25:57,214] [root] [INFO] [line:105]: 用例[充值成功--金额为50万]执行成功
+[2022-06-09 10:25:57,214] [root] [INFO] [line:106]: 实际运行结果是{'code': 0, 'msg': 'OK', 'data': {'id': 324344, 'leave_amount': 700000.1, 'mobile_phone': '18558362135', 'reg_name': 'hyean', 'reg_time': '2022-06-09 10:25:56.0', 'type': 0}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:25:57,214] [root] [INFO] [line:90]: 开始执行用例[充值成功--金额有2位小数]，用例参数为:{'member_id': 324344, 'amount': 50000.07}
+[2022-06-09 10:25:57,214] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:25:57,236] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/recharge HTTP/1.1" 200 None
+[2022-06-09 10:25:57,324] [root] [INFO] [line:105]: 用例[充值成功--金额有2位小数]执行成功
+[2022-06-09 10:25:57,324] [root] [INFO] [line:106]: 实际运行结果是{'code': 0, 'msg': 'OK', 'data': {'id': 324344, 'leave_amount': 750000.17, 'mobile_phone': '18558362135', 'reg_name': 'hyean', 'reg_time': '2022-06-09 10:25:56.0', 'type': 0}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:25:57,324] [root] [INFO] [line:90]: 开始执行用例[充值失败--金额等于0]，用例参数为:{'member_id': 324344, 'amount': 0}
+[2022-06-09 10:25:57,324] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:25:57,355] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/recharge HTTP/1.1" 200 None
+[2022-06-09 10:25:57,455] [root] [INFO] [line:99]: 用例[充值失败--金额等于0]执行失败
+[2022-06-09 10:25:57,455] [root] [INFO] [line:100]: 预期结果——>{'code': 2, 'msg': '余额必须大于0并且小于或者等于500000'}
+[2022-06-09 10:25:57,455] [root] [INFO] [line:101]: 实际结果——>{'code': 0, 'msg': 'OK', 'data': {'id': 324344, 'leave_amount': 750000.17, 'mobile_phone': '18558362135', 'reg_name': 'hyean', 'reg_time': '2022-06-09 10:25:56.0', 'type': 0}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:25:57,464] [root] [INFO] [line:90]: 开始执行用例[充值失败--金额小于0]，用例参数为:{'member_id': 324344, 'amount': -1000}
+[2022-06-09 10:25:57,464] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:25:57,484] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/recharge HTTP/1.1" 200 None
+[2022-06-09 10:25:57,564] [root] [INFO] [line:105]: 用例[充值失败--金额小于0]执行成功
+[2022-06-09 10:25:57,564] [root] [INFO] [line:106]: 实际运行结果是{'code': 2, 'msg': '余额必须大于0并且小于或者等于500000', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:25:57,564] [root] [INFO] [line:90]: 开始执行用例[充值失败--金额大于50万]，用例参数为:{'member_id': 324344, 'amount': 500002}
+[2022-06-09 10:25:57,574] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:25:57,584] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/recharge HTTP/1.1" 200 None
+[2022-06-09 10:25:57,674] [root] [INFO] [line:105]: 用例[充值失败--金额大于50万]执行成功
+[2022-06-09 10:25:57,674] [root] [INFO] [line:106]: 实际运行结果是{'code': 2, 'msg': '余额必须大于0并且小于或者等于500000', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:25:57,674] [root] [INFO] [line:90]: 开始执行用例[充值失败--用户不存在]，用例参数为:{'member_id': '1000001', 'amount': 5000}
+[2022-06-09 10:25:57,674] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:25:57,689] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/recharge HTTP/1.1" 200 None
+[2022-06-09 10:25:57,774] [root] [INFO] [line:105]: 用例[充值失败--用户不存在]执行成功
+[2022-06-09 10:25:57,790] [root] [INFO] [line:106]: 实际运行结果是{'code': 1007, 'msg': '无权限访问，请检查参数', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:25:57,790] [root] [INFO] [line:90]: 开始执行用例[充值失败--用户id为空]，用例参数为:{'amount': 50000}
+[2022-06-09 10:25:57,790] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:25:57,804] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/recharge HTTP/1.1" 200 None
+[2022-06-09 10:25:57,894] [root] [INFO] [line:105]: 用例[充值失败--用户id为空]执行成功
+[2022-06-09 10:25:57,894] [root] [INFO] [line:106]: 实际运行结果是{'code': 1, 'msg': '用户id为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:25:57,894] [root] [INFO] [line:90]: 开始执行用例[充值失败--用户id不是当前登录的用户id]，用例参数为:{'member_id': 8988, 'amount': 5000}
+[2022-06-09 10:25:57,894] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:25:57,914] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/recharge HTTP/1.1" 200 None
+[2022-06-09 10:25:57,994] [root] [INFO] [line:105]: 用例[充值失败--用户id不是当前登录的用户id]执行成功
+[2022-06-09 10:25:57,994] [root] [INFO] [line:106]: 实际运行结果是{'code': 1007, 'msg': '无权限访问，请检查参数', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:25:57,994] [root] [INFO] [line:90]: 开始执行用例[充值失败--充值金额为空]，用例参数为:{'member_id': 324344}
+[2022-06-09 10:25:57,994] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:25:58,014] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/recharge HTTP/1.1" 200 None
+[2022-06-09 10:25:58,114] [root] [INFO] [line:99]: 用例[充值失败--充值金额为空]执行失败
+[2022-06-09 10:25:58,114] [root] [INFO] [line:100]: 预期结果——>{'code': 1, 'msg': '充值余额为空'}
+[2022-06-09 10:25:58,114] [root] [INFO] [line:101]: 实际结果——>{'code': 2, 'msg': '数字格式化异常', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:25:58,114] [root] [INFO] [line:90]: 开始执行用例[充值失败--充值金额有3小数]，用例参数为:{'member_id': 324344, 'amount': 50000.007}
+[2022-06-09 10:25:58,114] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:25:58,134] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/recharge HTTP/1.1" 200 None
+[2022-06-09 10:25:58,224] [root] [INFO] [line:105]: 用例[充值失败--充值金额有3小数]执行成功
+[2022-06-09 10:25:58,224] [root] [INFO] [line:106]: 实际运行结果是{'code': 2, 'msg': '余额小数超过两位', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:25:58,224] [root] [INFO] [line:90]: 开始执行用例[充值失败--用户id为小数]，用例参数为:{'member_id': 324344.0, 'amount': 50000}
+[2022-06-09 10:25:58,224] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:25:58,244] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/recharge HTTP/1.1" 200 None
+[2022-06-09 10:25:58,324] [root] [INFO] [line:105]: 用例[充值失败--用户id为小数]执行成功
+[2022-06-09 10:25:58,324] [root] [INFO] [line:106]: 实际运行结果是{'code': 2, 'msg': '数字格式化异常', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:25:58,414] [root] [INFO] [line:85]: 用例[充值失败--充值金额为非数字]-->数据格式化错误,excel读取到的入参为{"member_id":324344,"amount":5w}
+[2022-06-09 10:25:58,414] [root] [ERROR] [line:86]: invalid syntax (<string>, line 1)
+[2022-06-09 10:25:58,414] [root] [INFO] [line:39]: ********************开始执行提现接口测试用例********************
+[2022-06-09 10:25:58,414] [root] [INFO] [line:44]: 开始执行注册用例，用例参数为:{'mobile_phone': '18526657463', 'pwd': '123456789', 'type': 0, 'reg_name': 'hyean'}
+[2022-06-09 10:25:58,414] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:25:58,474] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/register HTTP/1.1" 200 None
+[2022-06-09 10:25:58,475] [root] [INFO] [line:46]: 注册用例执行成功，注册结果返回{'code': 0, 'msg': 'OK', 'data': {'id': 324345, 'reg_name': 'hyean', 'mobile_phone': '18526657463'}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:25:58,476] [root] [INFO] [line:54]: 开始执行登录用例，用例参数为:{'mobile_phone': '18526657463', 'pwd': '123456789'}
+[2022-06-09 10:25:58,477] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:25:58,524] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/login HTTP/1.1" 200 None
+[2022-06-09 10:25:58,524] [root] [INFO] [line:56]: 登录用例执行成功，登录结果返回{'code': 0, 'msg': 'OK', 'data': {'id': 324345, 'leave_amount': 0.0, 'mobile_phone': '18526657463', 'reg_name': 'hyean', 'reg_time': '2022-06-09 10:25:58.0', 'type': 0, 'token_info': {'token_type': 'Bearer', 'expires_in': '2022-06-09 10:30:58', 'token': 'eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjMyNDM0NSwiZXhwIjoxNjU0NzQxODU4fQ.lGPwM-52MRrDOF6zj8QFqw2t-9OIHHj9f8j0VexIogo4kKpkxp-o2PEwe3rkdIBf7TwsnTa9hOvgAf04hbirlQ'}}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:25:58,524] [root] [INFO] [line:63]: 登录执行成功，可用于鉴权的token值为 Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjMyNDM0NSwiZXhwIjoxNjU0NzQxODU4fQ.lGPwM-52MRrDOF6zj8QFqw2t-9OIHHj9f8j0VexIogo4kKpkxp-o2PEwe3rkdIBf7TwsnTa9hOvgAf04hbirlQ
+[2022-06-09 10:25:58,524] [root] [INFO] [line:71]: 开始执行充值用例，用例参数为:{'member_id': 324345, 'amount': 20000}
+[2022-06-09 10:25:58,534] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:25:58,564] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/recharge HTTP/1.1" 200 None
+[2022-06-09 10:25:58,564] [root] [INFO] [line:73]: 充值用例执行成功，登录结果返回{'code': 0, 'msg': 'OK', 'data': {'id': 324345, 'leave_amount': 20000.0, 'mobile_phone': '18526657463', 'reg_name': 'hyean', 'reg_time': '2022-06-09 10:25:58.0', 'type': 0}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:25:58,564] [root] [INFO] [line:95]: 开始执行用例[提现成功]，用例参数为:{'member_id': 324345, 'amount': 200000}
+[2022-06-09 10:25:58,564] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:25:58,584] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/withdraw HTTP/1.1" 200 None
+[2022-06-09 10:25:58,674] [root] [INFO] [line:105]: 用例[提现成功]执行失败
+[2022-06-09 10:25:58,674] [root] [INFO] [line:106]: 预期结果——>{'code': 0, 'msg': 'OK'}
+[2022-06-09 10:25:58,674] [root] [INFO] [line:107]: 实际结果——>{'code': 1002, 'msg': '余额不足', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:25:58,684] [root] [INFO] [line:71]: 开始执行充值用例，用例参数为:{'member_id': 324345, 'amount': 20000}
+[2022-06-09 10:25:58,684] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:25:58,704] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/recharge HTTP/1.1" 200 None
+[2022-06-09 10:25:58,704] [root] [INFO] [line:73]: 充值用例执行成功，登录结果返回{'code': 0, 'msg': 'OK', 'data': {'id': 324345, 'leave_amount': 40000.0, 'mobile_phone': '18526657463', 'reg_name': 'hyean', 'reg_time': '2022-06-09 10:25:58.0', 'type': 0}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:25:58,704] [root] [INFO] [line:95]: 开始执行用例[提现成功--金额有一位小数]，用例参数为:{'member_id': 324345, 'amount': 20000.1}
+[2022-06-09 10:25:58,714] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:25:58,734] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/withdraw HTTP/1.1" 200 None
+[2022-06-09 10:25:58,814] [root] [INFO] [line:111]: 用例[提现成功--金额有一位小数]执行成功
+[2022-06-09 10:25:58,814] [root] [INFO] [line:112]: 实际运行结果是{'code': 0, 'msg': 'OK', 'data': {'id': 324345, 'leave_amount': 19999.9, 'mobile_phone': '18526657463', 'reg_name': 'hyean', 'reg_time': '2022-06-09 10:25:58.0', 'type': 0}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:25:58,814] [root] [INFO] [line:71]: 开始执行充值用例，用例参数为:{'member_id': 324345, 'amount': 20000}
+[2022-06-09 10:25:58,824] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:25:58,849] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/recharge HTTP/1.1" 200 None
+[2022-06-09 10:25:58,849] [root] [INFO] [line:73]: 充值用例执行成功，登录结果返回{'code': 0, 'msg': 'OK', 'data': {'id': 324345, 'leave_amount': 39999.9, 'mobile_phone': '18526657463', 'reg_name': 'hyean', 'reg_time': '2022-06-09 10:25:58.0', 'type': 0}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:25:58,854] [root] [INFO] [line:95]: 开始执行用例[提现成功--金额有2位小数]，用例参数为:{'member_id': 324345, 'amount': 2000.01}
+[2022-06-09 10:25:58,854] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:25:58,879] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/withdraw HTTP/1.1" 200 None
+[2022-06-09 10:25:58,964] [root] [INFO] [line:111]: 用例[提现成功--金额有2位小数]执行成功
+[2022-06-09 10:25:58,964] [root] [INFO] [line:112]: 实际运行结果是{'code': 0, 'msg': 'OK', 'data': {'id': 324345, 'leave_amount': 37999.89, 'mobile_phone': '18526657463', 'reg_name': 'hyean', 'reg_time': '2022-06-09 10:25:58.0', 'type': 0}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:25:58,964] [root] [INFO] [line:71]: 开始执行充值用例，用例参数为:{'member_id': 324345, 'amount': 20000}
+[2022-06-09 10:25:58,969] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:25:58,994] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/recharge HTTP/1.1" 200 None
+[2022-06-09 10:25:58,994] [root] [INFO] [line:73]: 充值用例执行成功，登录结果返回{'code': 0, 'msg': 'OK', 'data': {'id': 324345, 'leave_amount': 57999.89, 'mobile_phone': '18526657463', 'reg_name': 'hyean', 'reg_time': '2022-06-09 10:25:58.0', 'type': 0}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:25:58,994] [root] [INFO] [line:95]: 开始执行用例[提现失败--金额有3位小数]，用例参数为:{'member_id': 324345, 'amount': 2000.001}
+[2022-06-09 10:25:58,994] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:25:59,014] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/withdraw HTTP/1.1" 200 None
+[2022-06-09 10:25:59,099] [root] [INFO] [line:111]: 用例[提现失败--金额有3位小数]执行成功
+[2022-06-09 10:25:59,099] [root] [INFO] [line:112]: 实际运行结果是{'code': 2, 'msg': '余额小数超过两位', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:25:59,099] [root] [INFO] [line:71]: 开始执行充值用例，用例参数为:{'member_id': 324345, 'amount': 20000}
+[2022-06-09 10:25:59,099] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:25:59,124] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/recharge HTTP/1.1" 200 None
+[2022-06-09 10:25:59,124] [root] [INFO] [line:73]: 充值用例执行成功，登录结果返回{'code': 0, 'msg': 'OK', 'data': {'id': 324345, 'leave_amount': 77999.89, 'mobile_phone': '18526657463', 'reg_name': 'hyean', 'reg_time': '2022-06-09 10:25:58.0', 'type': 0}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:25:59,124] [root] [INFO] [line:95]: 开始执行用例[提现失败--用户id不存在]，用例参数为:{'member_id': 10009, 'amount': 100000}
+[2022-06-09 10:25:59,124] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:25:59,144] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/withdraw HTTP/1.1" 200 None
+[2022-06-09 10:25:59,234] [root] [INFO] [line:111]: 用例[提现失败--用户id不存在]执行成功
+[2022-06-09 10:25:59,234] [root] [INFO] [line:112]: 实际运行结果是{'code': 2, 'msg': '会员不存在', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:25:59,234] [root] [INFO] [line:71]: 开始执行充值用例，用例参数为:{'member_id': 324345, 'amount': 20000}
+[2022-06-09 10:25:59,234] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:25:59,264] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/recharge HTTP/1.1" 200 None
+[2022-06-09 10:25:59,264] [root] [INFO] [line:73]: 充值用例执行成功，登录结果返回{'code': 0, 'msg': 'OK', 'data': {'id': 324345, 'leave_amount': 97999.89, 'mobile_phone': '18526657463', 'reg_name': 'hyean', 'reg_time': '2022-06-09 10:25:58.0', 'type': 0}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:25:59,264] [root] [INFO] [line:95]: 开始执行用例[提现失败--用户id为空]，用例参数为:{'amount': 20000}
+[2022-06-09 10:25:59,264] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:25:59,284] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/withdraw HTTP/1.1" 200 None
+[2022-06-09 10:25:59,364] [root] [INFO] [line:111]: 用例[提现失败--用户id为空]执行成功
+[2022-06-09 10:25:59,364] [root] [INFO] [line:112]: 实际运行结果是{'code': 1, 'msg': '会员id为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:25:59,364] [root] [INFO] [line:71]: 开始执行充值用例，用例参数为:{'member_id': 324345, 'amount': 20000}
+[2022-06-09 10:25:59,374] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:25:59,395] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/recharge HTTP/1.1" 200 None
+[2022-06-09 10:25:59,395] [root] [INFO] [line:73]: 充值用例执行成功，登录结果返回{'code': 0, 'msg': 'OK', 'data': {'id': 324345, 'leave_amount': 117999.89, 'mobile_phone': '18526657463', 'reg_name': 'hyean', 'reg_time': '2022-06-09 10:25:58.0', 'type': 0}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:25:59,404] [root] [INFO] [line:95]: 开始执行用例[提现失败--提现金额小于0]，用例参数为:{'member_id': 324345, 'amount': -2000}
+[2022-06-09 10:25:59,404] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:25:59,414] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/withdraw HTTP/1.1" 200 None
+[2022-06-09 10:25:59,504] [root] [INFO] [line:111]: 用例[提现失败--提现金额小于0]执行成功
+[2022-06-09 10:25:59,504] [root] [INFO] [line:112]: 实际运行结果是{'code': 2, 'msg': '余额必须大于0并且小于或者等于5000000', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:25:59,504] [root] [INFO] [line:71]: 开始执行充值用例，用例参数为:{'member_id': 324345, 'amount': 20000}
+[2022-06-09 10:25:59,504] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:25:59,534] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/recharge HTTP/1.1" 200 None
+[2022-06-09 10:25:59,534] [root] [INFO] [line:73]: 充值用例执行成功，登录结果返回{'code': 0, 'msg': 'OK', 'data': {'id': 324345, 'leave_amount': 137999.89, 'mobile_phone': '18526657463', 'reg_name': 'hyean', 'reg_time': '2022-06-09 10:25:58.0', 'type': 0}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:25:59,534] [root] [INFO] [line:95]: 开始执行用例[提现失败--提现金额大于50万]，用例参数为:{'member_id': 324345, 'amount': 500000.1}
+[2022-06-09 10:25:59,534] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:25:59,554] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/withdraw HTTP/1.1" 200 None
+[2022-06-09 10:25:59,664] [root] [INFO] [line:111]: 用例[提现失败--提现金额大于50万]执行成功
+[2022-06-09 10:25:59,664] [root] [INFO] [line:112]: 实际运行结果是{'code': 2, 'msg': '余额必须大于0并且小于或者等于5000000', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:25:59,664] [root] [INFO] [line:71]: 开始执行充值用例，用例参数为:{'member_id': 324345, 'amount': 20000}
+[2022-06-09 10:25:59,664] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:25:59,694] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/recharge HTTP/1.1" 200 None
+[2022-06-09 10:25:59,694] [root] [INFO] [line:73]: 充值用例执行成功，登录结果返回{'code': 0, 'msg': 'OK', 'data': {'id': 324345, 'leave_amount': 157999.89, 'mobile_phone': '18526657463', 'reg_name': 'hyean', 'reg_time': '2022-06-09 10:25:58.0', 'type': 0}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:25:59,694] [root] [INFO] [line:95]: 开始执行用例[提现失败--提现金额为空]，用例参数为:{'member_id': 324345}
+[2022-06-09 10:25:59,694] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:25:59,714] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/withdraw HTTP/1.1" 200 None
+[2022-06-09 10:25:59,794] [root] [INFO] [line:111]: 用例[提现失败--提现金额为空]执行成功
+[2022-06-09 10:25:59,794] [root] [INFO] [line:112]: 实际运行结果是{'code': 1, 'msg': '余额为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:25:59,794] [root] [INFO] [line:71]: 开始执行充值用例，用例参数为:{'member_id': 324345, 'amount': 20000}
+[2022-06-09 10:25:59,804] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:25:59,824] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/recharge HTTP/1.1" 200 None
+[2022-06-09 10:25:59,824] [root] [INFO] [line:73]: 充值用例执行成功，登录结果返回{'code': 0, 'msg': 'OK', 'data': {'id': 324345, 'leave_amount': 177999.89, 'mobile_phone': '18526657463', 'reg_name': 'hyean', 'reg_time': '2022-06-09 10:25:58.0', 'type': 0}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:25:59,824] [root] [INFO] [line:95]: 开始执行用例[提现失败--用户id为小数]，用例参数为:{'member_id': 324345.0, 'amount': 100000}
+[2022-06-09 10:25:59,824] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:25:59,844] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/withdraw HTTP/1.1" 200 None
+[2022-06-09 10:25:59,925] [root] [INFO] [line:111]: 用例[提现失败--用户id为小数]执行成功
+[2022-06-09 10:25:59,934] [root] [INFO] [line:112]: 实际运行结果是{'code': 2, 'msg': '数值参数格式不正确', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:25:59,934] [root] [INFO] [line:71]: 开始执行充值用例，用例参数为:{'member_id': 324345, 'amount': 20000}
+[2022-06-09 10:25:59,934] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:25:59,958] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/recharge HTTP/1.1" 200 None
+[2022-06-09 10:25:59,958] [root] [INFO] [line:73]: 充值用例执行成功，登录结果返回{'code': 0, 'msg': 'OK', 'data': {'id': 324345, 'leave_amount': 197999.89, 'mobile_phone': '18526657463', 'reg_name': 'hyean', 'reg_time': '2022-06-09 10:25:58.0', 'type': 0}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:26:00,044] [root] [INFO] [line:90]: 用例[提现失败--提现金额为非数字]-->数据格式化错误,excel读取到的入参为{"member_id":324345,"amount":50万}
+[2022-06-09 10:26:00,044] [root] [ERROR] [line:91]: invalid syntax (<string>, line 1)
+[2022-06-09 10:26:00,044] [root] [INFO] [line:71]: 开始执行充值用例，用例参数为:{'member_id': 324345, 'amount': 20000}
+[2022-06-09 10:26:00,044] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:26:00,065] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/recharge HTTP/1.1" 200 None
+[2022-06-09 10:26:00,074] [root] [INFO] [line:73]: 充值用例执行成功，登录结果返回{'code': 0, 'msg': 'OK', 'data': {'id': 324345, 'leave_amount': 217999.89, 'mobile_phone': '18526657463', 'reg_name': 'hyean', 'reg_time': '2022-06-09 10:25:58.0', 'type': 0}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:26:00,074] [root] [INFO] [line:95]: 开始执行用例[提现失败--用户id为非数字]，用例参数为:{'member_id': 'hyean', 'amount': 100000}
+[2022-06-09 10:26:00,074] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:26:00,094] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/withdraw HTTP/1.1" 200 None
+[2022-06-09 10:26:00,174] [root] [INFO] [line:111]: 用例[提现失败--用户id为非数字]执行成功
+[2022-06-09 10:26:00,174] [root] [INFO] [line:112]: 实际运行结果是{'code': 2, 'msg': '数值参数格式不正确', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:26:00,174] [root] [INFO] [line:36]: ********************开始执行新增项目接口测试用例********************
+[2022-06-09 10:26:00,179] [root] [INFO] [line:41]: 开始执行注册用例，用例参数为{'mobile_phone': '18539926771', 'pwd': '123456789', 'type': 0, 'reg_name': 'hyean_ad'}
+[2022-06-09 10:26:00,179] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:26:00,234] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/register HTTP/1.1" 200 None
+[2022-06-09 10:26:00,234] [root] [INFO] [line:43]: 注册用例执行成功，用户注册结果返回：{'code': 0, 'msg': 'OK', 'data': {'id': 324346, 'reg_name': 'hyean_ad', 'mobile_phone': '18539926771'}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:26:00,234] [root] [INFO] [line:52]: 开始执行登录用例，用例参数为{'mobile_phone': '18539926771', 'pwd': '123456789'}
+[2022-06-09 10:26:00,234] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:26:00,284] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/login HTTP/1.1" 200 None
+[2022-06-09 10:26:00,284] [root] [INFO] [line:54]: 登录用例执行成功，用户登录结果返回：{'code': 0, 'msg': 'OK', 'data': {'id': 324346, 'leave_amount': 0.0, 'mobile_phone': '18539926771', 'reg_name': 'hyean_ad', 'reg_time': '2022-06-09 10:25:59.0', 'type': 0, 'token_info': {'token_type': 'Bearer', 'expires_in': '2022-06-09 10:31:00', 'token': 'eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjMyNDM0NiwiZXhwIjoxNjU0NzQxODYwfQ.Fe99ConWQEHIZKDtU4t2sE2tsszww8Ofh9EAQjnFvo_NATWYTTJhQpI6sLhN3LKZ5uzNKX5WFyjzU1zzOrp14w'}}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:26:00,284] [root] [INFO] [line:61]: 登录执行成功，可用于鉴权的token值为 Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjMyNDM0NiwiZXhwIjoxNjU0NzQxODYwfQ.Fe99ConWQEHIZKDtU4t2sE2tsszww8Ofh9EAQjnFvo_NATWYTTJhQpI6sLhN3LKZ5uzNKX5WFyjzU1zzOrp14w
+[2022-06-09 10:26:00,294] [root] [INFO] [line:75]: 开始执行用例[新增项目成功--借款期限类型为月]，用例参数为:{'member_id': 324346, 'title': 'test-001', 'amount': 20000.0, 'loan_rate': 10, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5}
+[2022-06-09 10:26:00,294] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:26:00,314] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/loan/add HTTP/1.1" 200 None
+[2022-06-09 10:26:00,404] [root] [INFO] [line:90]: 用例[新增项目成功--借款期限类型为月]执行成功
+[2022-06-09 10:26:00,404] [root] [INFO] [line:91]: 实际运行结果是{'code': 0, 'msg': 'OK', 'data': {'id': 13035, 'member_id': 324346, 'title': 'test-001', 'amount': 20000.0, 'loan_rate': 10.0, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2022-06-09 10:26:00.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:26:00,404] [root] [INFO] [line:75]: 开始执行用例[新增项目成功--借款期限类型为天]，用例参数为:{'member_id': 324346, 'title': 'test-001', 'amount': 20000.0, 'loan_rate': 10, 'loan_term': 30, 'loan_date_type': 2, 'bidding_days': 1}
+[2022-06-09 10:26:00,404] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:26:00,429] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/loan/add HTTP/1.1" 200 None
+[2022-06-09 10:26:00,524] [root] [INFO] [line:90]: 用例[新增项目成功--借款期限类型为天]执行成功
+[2022-06-09 10:26:00,524] [root] [INFO] [line:91]: 实际运行结果是{'code': 0, 'msg': 'OK', 'data': {'id': 13036, 'member_id': 324346, 'title': 'test-001', 'amount': 20000.0, 'loan_rate': 10.0, 'loan_term': 30, 'loan_date_type': 2, 'bidding_days': 5, 'create_time': '2022-06-09 10:26:00.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:26:00,524] [root] [INFO] [line:75]: 开始执行用例[新增项目成功--借款期限为1个月]，用例参数为:{'member_id': 324346, 'title': 'test-001', 'amount': 20000.0, 'loan_rate': 10, 'loan_term': 1, 'loan_date_type': 1, 'bidding_days': 1}
+[2022-06-09 10:26:00,524] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:26:00,554] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/loan/add HTTP/1.1" 200 None
+[2022-06-09 10:26:00,644] [root] [INFO] [line:90]: 用例[新增项目成功--借款期限为1个月]执行成功
+[2022-06-09 10:26:00,644] [root] [INFO] [line:91]: 实际运行结果是{'code': 0, 'msg': 'OK', 'data': {'id': 13037, 'member_id': 324346, 'title': 'test-001', 'amount': 20000.0, 'loan_rate': 10.0, 'loan_term': 1, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2022-06-09 10:26:00.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:26:00,644] [root] [INFO] [line:75]: 开始执行用例[新增项目成功--借款期限为36个月]，用例参数为:{'member_id': 324346, 'title': 'test-001', 'amount': 20000.0, 'loan_rate': 10, 'loan_term': 36, 'loan_date_type': 1, 'bidding_days': 1}
+[2022-06-09 10:26:00,649] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:26:00,664] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/loan/add HTTP/1.1" 200 None
+[2022-06-09 10:26:00,759] [root] [INFO] [line:90]: 用例[新增项目成功--借款期限为36个月]执行成功
+[2022-06-09 10:26:00,759] [root] [INFO] [line:91]: 实际运行结果是{'code': 0, 'msg': 'OK', 'data': {'id': 13038, 'member_id': 324346, 'title': 'test-001', 'amount': 20000.0, 'loan_rate': 10.0, 'loan_term': 36, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2022-06-09 10:26:00.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:26:00,759] [root] [INFO] [line:75]: 开始执行用例[新增项目成功--借款期限为10天]，用例参数为:{'member_id': 324346, 'title': 'test-001', 'amount': 20000.0, 'loan_rate': 10, 'loan_term': 10, 'loan_date_type': 2, 'bidding_days': 1}
+[2022-06-09 10:26:00,760] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:26:00,784] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/loan/add HTTP/1.1" 200 None
+[2022-06-09 10:26:00,874] [root] [INFO] [line:90]: 用例[新增项目成功--借款期限为10天]执行成功
+[2022-06-09 10:26:00,874] [root] [INFO] [line:91]: 实际运行结果是{'code': 0, 'msg': 'OK', 'data': {'id': 13039, 'member_id': 324346, 'title': 'test-001', 'amount': 20000.0, 'loan_rate': 10.0, 'loan_term': 10, 'loan_date_type': 2, 'bidding_days': 5, 'create_time': '2022-06-09 10:26:00.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:26:00,874] [root] [INFO] [line:75]: 开始执行用例[新增项目成功--借款期限为45天]，用例参数为:{'member_id': 324346, 'title': 'test-001', 'amount': 20000.0, 'loan_rate': 10, 'loan_term': 45, 'loan_date_type': 2, 'bidding_days': 1}
+[2022-06-09 10:26:00,874] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:26:00,894] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/loan/add HTTP/1.1" 200 None
+[2022-06-09 10:26:00,984] [root] [INFO] [line:90]: 用例[新增项目成功--借款期限为45天]执行成功
+[2022-06-09 10:26:00,984] [root] [INFO] [line:91]: 实际运行结果是{'code': 0, 'msg': 'OK', 'data': {'id': 13040, 'member_id': 324346, 'title': 'test-001', 'amount': 20000.0, 'loan_rate': 10.0, 'loan_term': 45, 'loan_date_type': 2, 'bidding_days': 5, 'create_time': '2022-06-09 10:26:00.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:26:00,984] [root] [INFO] [line:75]: 开始执行用例[新增项目成功--竞标天数为1天]，用例参数为:{'member_id': 324346, 'title': 'test-001', 'amount': 20000.0, 'loan_rate': 10, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 1}
+[2022-06-09 10:26:00,984] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:26:01,004] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/loan/add HTTP/1.1" 200 None
+[2022-06-09 10:26:01,094] [root] [INFO] [line:90]: 用例[新增项目成功--竞标天数为1天]执行成功
+[2022-06-09 10:26:01,094] [root] [INFO] [line:91]: 实际运行结果是{'code': 0, 'msg': 'OK', 'data': {'id': 13041, 'member_id': 324346, 'title': 'test-001', 'amount': 20000.0, 'loan_rate': 10.0, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2022-06-09 10:26:00.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:26:01,094] [root] [INFO] [line:75]: 开始执行用例[新增项目成功--竞标天数为10天]，用例参数为:{'member_id': 324346, 'title': 'test-001', 'amount': 20000.0, 'loan_rate': 10, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 10}
+[2022-06-09 10:26:01,099] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:26:01,114] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/loan/add HTTP/1.1" 200 None
+[2022-06-09 10:26:01,234] [root] [INFO] [line:90]: 用例[新增项目成功--竞标天数为10天]执行成功
+[2022-06-09 10:26:01,234] [root] [INFO] [line:91]: 实际运行结果是{'code': 0, 'msg': 'OK', 'data': {'id': 13042, 'member_id': 324346, 'title': 'test-001', 'amount': 20000.0, 'loan_rate': 10.0, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2022-06-09 10:26:00.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:26:01,234] [root] [INFO] [line:75]: 开始执行用例[新增项目失败--借款期限为0个月]，用例参数为:{'member_id': 324346, 'title': 'test-001', 'amount': 20000.0, 'loan_rate': 10, 'loan_term': 0, 'loan_date_type': 1, 'bidding_days': 1}
+[2022-06-09 10:26:01,234] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:26:01,264] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/loan/add HTTP/1.1" 200 None
+[2022-06-09 10:26:01,344] [root] [INFO] [line:90]: 用例[新增项目失败--借款期限为0个月]执行成功
+[2022-06-09 10:26:01,344] [root] [INFO] [line:91]: 实际运行结果是{'code': 2, 'msg': '借款期限单位为月的项目,期限范围为1到36个月(包含1个月和36个月)', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:26:01,344] [root] [INFO] [line:75]: 开始执行用例[新增项目失败--借款期限大于36个月]，用例参数为:{'member_id': 324346, 'title': 'test-001', 'amount': 20000.0, 'loan_rate': 10, 'loan_term': 37, 'loan_date_type': 1, 'bidding_days': 1}
+[2022-06-09 10:26:01,344] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:26:01,364] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/loan/add HTTP/1.1" 200 None
+[2022-06-09 10:26:01,454] [root] [INFO] [line:90]: 用例[新增项目失败--借款期限大于36个月]执行成功
+[2022-06-09 10:26:01,454] [root] [INFO] [line:91]: 实际运行结果是{'code': 2, 'msg': '借款期限单位为月的项目,期限范围为1到36个月(包含1个月和36个月)', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:26:01,456] [root] [INFO] [line:75]: 开始执行用例[新增项目失败--借款期限小于10天]，用例参数为:{'member_id': 324346, 'title': 'test-001', 'amount': 20000.0, 'loan_rate': 10, 'loan_term': 9, 'loan_date_type': 2, 'bidding_days': 1}
+[2022-06-09 10:26:01,457] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:26:01,474] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/loan/add HTTP/1.1" 200 None
+[2022-06-09 10:26:01,561] [root] [INFO] [line:90]: 用例[新增项目失败--借款期限小于10天]执行成功
+[2022-06-09 10:26:01,561] [root] [INFO] [line:91]: 实际运行结果是{'code': 2, 'msg': '借款期限单位为天的项目,期限范围为10到45天(包含10天和45天)', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:26:01,561] [root] [INFO] [line:75]: 开始执行用例[新增项目失败--借款期限大于45天]，用例参数为:{'member_id': 324346, 'title': 'test-001', 'amount': 20000.0, 'loan_rate': 10, 'loan_term': 46, 'loan_date_type': 2, 'bidding_days': 1}
+[2022-06-09 10:26:01,564] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:26:01,584] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/loan/add HTTP/1.1" 200 None
+[2022-06-09 10:26:01,664] [root] [INFO] [line:90]: 用例[新增项目失败--借款期限大于45天]执行成功
+[2022-06-09 10:26:01,664] [root] [INFO] [line:91]: 实际运行结果是{'code': 2, 'msg': '借款期限单位为天的项目,期限范围为10到45天(包含10天和45天)', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:26:01,674] [root] [INFO] [line:75]: 开始执行用例[新增项目失败--竞标天数为0天]，用例参数为:{'member_id': 324346, 'title': 'test-001', 'amount': 20000.0, 'loan_rate': 10, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 0}
+[2022-06-09 10:26:01,674] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:26:01,694] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/loan/add HTTP/1.1" 200 None
+[2022-06-09 10:26:01,804] [root] [INFO] [line:90]: 用例[新增项目失败--竞标天数为0天]执行成功
+[2022-06-09 10:26:01,804] [root] [INFO] [line:91]: 实际运行结果是{'code': 2, 'msg': '竞标期限为1-10天', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:26:01,804] [root] [INFO] [line:75]: 开始执行用例[新增项目失败--竞标天数为11天]，用例参数为:{'member_id': 324346, 'title': 'test-001', 'amount': 20000.0, 'loan_rate': 10, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 11}
+[2022-06-09 10:26:01,804] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:26:01,824] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/loan/add HTTP/1.1" 200 None
+[2022-06-09 10:26:01,914] [root] [INFO] [line:90]: 用例[新增项目失败--竞标天数为11天]执行成功
+[2022-06-09 10:26:01,914] [root] [INFO] [line:91]: 实际运行结果是{'code': 2, 'msg': '竞标期限为1-10天', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:26:01,914] [root] [INFO] [line:75]: 开始执行用例[新增项目失败--用户ID为空]，用例参数为:{'member_id': None, 'title': 'test-001', 'amount': 20000.0, 'loan_rate': 10, 'loan_term': 45, 'loan_date_type': 2, 'bidding_days': 1}
+[2022-06-09 10:26:01,914] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:26:01,934] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/loan/add HTTP/1.1" 200 None
+[2022-06-09 10:26:02,014] [root] [INFO] [line:90]: 用例[新增项目失败--用户ID为空]执行成功
+[2022-06-09 10:26:02,014] [root] [INFO] [line:91]: 实际运行结果是{'code': 1, 'msg': '用户id为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:26:02,014] [root] [INFO] [line:75]: 开始执行用例[新增项目失败--项目标题为空]，用例参数为:{'member_id': 324346, 'title': None, 'amount': 20000.0, 'loan_rate': 10, 'loan_term': 45, 'loan_date_type': 2, 'bidding_days': 1}
+[2022-06-09 10:26:02,014] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:26:02,034] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/loan/add HTTP/1.1" 200 None
+[2022-06-09 10:26:02,124] [root] [INFO] [line:90]: 用例[新增项目失败--项目标题为空]执行成功
+[2022-06-09 10:26:02,124] [root] [INFO] [line:91]: 实际运行结果是{'code': 1, 'msg': '标题为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:26:02,124] [root] [INFO] [line:75]: 开始执行用例[新增项目失败--借款金额为空]，用例参数为:{'member_id': 324346, 'title': 'test-001', 'amount': None, 'loan_rate': 10, 'loan_term': 45, 'loan_date_type': 2, 'bidding_days': 1}
+[2022-06-09 10:26:02,124] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:26:02,144] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/loan/add HTTP/1.1" 200 None
+[2022-06-09 10:26:02,224] [root] [INFO] [line:90]: 用例[新增项目失败--借款金额为空]执行成功
+[2022-06-09 10:26:02,224] [root] [INFO] [line:91]: 实际运行结果是{'code': 1, 'msg': '借款金额为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:26:02,224] [root] [INFO] [line:75]: 开始执行用例[新增项目失败--年利率为空]，用例参数为:{'member_id': 324346, 'title': 'test-001', 'amount': 20000.0, 'loan_rate': None, 'loan_term': 45, 'loan_date_type': 2, 'bidding_days': 1}
+[2022-06-09 10:26:02,224] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:26:02,254] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/loan/add HTTP/1.1" 200 None
+[2022-06-09 10:26:02,374] [root] [INFO] [line:90]: 用例[新增项目失败--年利率为空]执行成功
+[2022-06-09 10:26:02,374] [root] [INFO] [line:91]: 实际运行结果是{'code': 1, 'msg': '利率为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:26:02,374] [root] [INFO] [line:75]: 开始执行用例[新增项目失败--借款期限为空]，用例参数为:{'member_id': 324346, 'title': 'test-001', 'amount': 20000.0, 'loan_rate': 10, 'loan_term': None, 'loan_date_type': 2, 'bidding_days': 1}
+[2022-06-09 10:26:02,379] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:26:02,394] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/loan/add HTTP/1.1" 200 None
+[2022-06-09 10:26:02,482] [root] [INFO] [line:90]: 用例[新增项目失败--借款期限为空]执行成功
+[2022-06-09 10:26:02,482] [root] [INFO] [line:91]: 实际运行结果是{'code': 1, 'msg': '借款期限为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:26:02,483] [root] [INFO] [line:75]: 开始执行用例[新增项目失败--借款期限类型为空]，用例参数为:{'member_id': 324346, 'title': 'test-001', 'amount': 20000.0, 'loan_rate': 10, 'loan_term': 45, 'loan_date_type': None, 'bidding_days': 1}
+[2022-06-09 10:26:02,485] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:26:02,501] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/loan/add HTTP/1.1" 200 None
+[2022-06-09 10:26:02,584] [root] [INFO] [line:90]: 用例[新增项目失败--借款期限类型为空]执行成功
+[2022-06-09 10:26:02,584] [root] [INFO] [line:91]: 实际运行结果是{'code': 1, 'msg': '借款日期类型为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:26:02,584] [root] [INFO] [line:75]: 开始执行用例[新增项目失败--竞标天数为空]，用例参数为:{'member_id': 324346, 'title': 'test-001', 'amount': 20000.0, 'loan_rate': 10, 'loan_term': 45, 'loan_date_type': 2, 'bidding_days': None}
+[2022-06-09 10:26:02,584] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:26:02,604] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/loan/add HTTP/1.1" 200 None
+[2022-06-09 10:26:02,684] [root] [INFO] [line:90]: 用例[新增项目失败--竞标天数为空]执行成功
+[2022-06-09 10:26:02,684] [root] [INFO] [line:91]: 实际运行结果是{'code': 1, 'msg': '竞标期限为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:26:02,684] [root] [INFO] [line:36]: ********************开始执行审核项目接口测试用例********************
+[2022-06-09 10:26:02,684] [root] [INFO] [line:42]: 开始执行注册用例
+管理员权限用户的用例参数为:{'mobile_phone': '18517882160', 'pwd': '123456789', 'type': 0, 'reg_name': 'hyean_ad'}
+普通用户的用例参数为{'mobile_phone': '18559274371', 'pwd': '123456789', 'type': 1, 'reg_name': 'hyean_com'}
+[2022-06-09 10:26:02,684] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:26:02,744] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/register HTTP/1.1" 200 None
+[2022-06-09 10:26:02,744] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:26:02,804] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/register HTTP/1.1" 200 None
+[2022-06-09 10:26:02,804] [root] [INFO] [line:48]: 注册用例执行成功
+管理员权限用户注册结果：{'code': 0, 'msg': 'OK', 'data': {'id': 324347, 'reg_name': 'hyean_ad', 'mobile_phone': '18517882160'}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+普通用户注册结果：{'code': 0, 'msg': 'OK', 'data': {'id': 324348, 'reg_name': 'hyean_com', 'mobile_phone': '18559274371'}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:26:02,804] [root] [INFO] [line:61]: 开始执行管理员权限用户登录，用例参数为{'mobile_phone': '18517882160', 'pwd': '123456789'}
+[2022-06-09 10:26:02,804] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:26:02,862] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/login HTTP/1.1" 200 None
+[2022-06-09 10:26:02,864] [root] [INFO] [line:63]: 管理员权限用户登录成功，用户登录结果返回：{'code': 0, 'msg': 'OK', 'data': {'id': 324347, 'leave_amount': 0.0, 'mobile_phone': '18517882160', 'reg_name': 'hyean_ad', 'reg_time': '2022-06-09 10:26:02.0', 'type': 0, 'token_info': {'token_type': 'Bearer', 'expires_in': '2022-06-09 10:31:02', 'token': 'eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjMyNDM0NywiZXhwIjoxNjU0NzQxODYyfQ.S7NLOijN-sHAuH3D9R5OebNFHpkT0GRLzArp4mvP3x0Guk4vwo61lVt_ehogC8PlV9MeiZonItKB_ZYzV2VDHQ'}}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:26:02,864] [root] [INFO] [line:64]: 开始执行普通会员权限用户登录，用例参数为{'mobile_phone': '18559274371', 'pwd': '123456789'}
+[2022-06-09 10:26:02,874] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:26:02,925] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/login HTTP/1.1" 200 None
+[2022-06-09 10:26:02,925] [root] [INFO] [line:66]: 普通会员用户登录成功，用户登录结果返回：{'code': 0, 'msg': 'OK', 'data': {'id': 324348, 'leave_amount': 0.0, 'mobile_phone': '18559274371', 'reg_name': 'hyean_com', 'reg_time': '2022-06-09 10:26:02.0', 'type': 1, 'token_info': {'token_type': 'Bearer', 'expires_in': '2022-06-09 10:31:02', 'token': 'eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjMyNDM0OCwiZXhwIjoxNjU0NzQxODYyfQ.NWC3qwP0CunLNOawjofB0lPA25-VLKYS0csyfJXQHgSrjlMLP24ZQrwpKJ9Abmat2gx3oLEapmtlaFjDh6IdKA'}}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:26:02,925] [root] [INFO] [line:73]: 管理员权限登录的用户，用于鉴权的token值为 Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjMyNDM0NywiZXhwIjoxNjU0NzQxODYyfQ.S7NLOijN-sHAuH3D9R5OebNFHpkT0GRLzArp4mvP3x0Guk4vwo61lVt_ehogC8PlV9MeiZonItKB_ZYzV2VDHQ
+[2022-06-09 10:26:02,925] [root] [INFO] [line:78]: 普通会员权限登录的用户，用于鉴权的token值为 Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjMyNDM0OCwiZXhwIjoxNjU0NzQxODYyfQ.NWC3qwP0CunLNOawjofB0lPA25-VLKYS0csyfJXQHgSrjlMLP24ZQrwpKJ9Abmat2gx3oLEapmtlaFjDh6IdKA
+[2022-06-09 10:26:02,934] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:26:02,954] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/loan/add HTTP/1.1" 200 None
+[2022-06-09 10:26:02,954] [root] [INFO] [line:100]: 新创建的需要审核的项目id为 13043
+[2022-06-09 10:26:02,954] [root] [INFO] [line:121]: 开始执行用例[审核成功--项目通过]，用例参数为:{'loan_id': 13043, 'approved_or_not': True}
+[2022-06-09 10:26:02,954] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:26:02,974] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "PATCH /futureloan/loan/audit HTTP/1.1" 200 None
+[2022-06-09 10:26:03,064] [root] [INFO] [line:136]: 用例[审核成功--项目通过]执行成功
+[2022-06-09 10:26:03,064] [root] [INFO] [line:137]: 实际运行结果是{'code': 0, 'msg': 'OK', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:26:03,064] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:26:03,084] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/loan/add HTTP/1.1" 200 None
+[2022-06-09 10:26:03,084] [root] [INFO] [line:100]: 新创建的需要审核的项目id为 13044
+[2022-06-09 10:26:03,084] [root] [INFO] [line:121]: 开始执行用例[审核成功--项目不通过]，用例参数为:{'loan_id': 13044, 'approved_or_not': False}
+[2022-06-09 10:26:03,094] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:26:03,114] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "PATCH /futureloan/loan/audit HTTP/1.1" 200 None
+[2022-06-09 10:26:03,204] [root] [INFO] [line:136]: 用例[审核成功--项目不通过]执行成功
+[2022-06-09 10:26:03,204] [root] [INFO] [line:137]: 实际运行结果是{'code': 0, 'msg': 'OK', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:26:03,204] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:26:03,224] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/loan/add HTTP/1.1" 200 None
+[2022-06-09 10:26:03,224] [root] [INFO] [line:100]: 新创建的需要审核的项目id为 13045
+[2022-06-09 10:26:03,234] [root] [INFO] [line:121]: 开始执行用例[审核失败--项目id为空]，用例参数为:{'loan_id': None, 'approved_or_not': True}
+[2022-06-09 10:26:03,234] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:26:03,244] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "PATCH /futureloan/loan/audit HTTP/1.1" 200 None
+[2022-06-09 10:26:03,334] [root] [INFO] [line:136]: 用例[审核失败--项目id为空]执行成功
+[2022-06-09 10:26:03,334] [root] [INFO] [line:137]: 实际运行结果是{'code': 1, 'msg': '项目id为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:26:03,334] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:26:03,354] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/loan/add HTTP/1.1" 200 None
+[2022-06-09 10:26:03,354] [root] [INFO] [line:100]: 新创建的需要审核的项目id为 13046
+[2022-06-09 10:26:03,354] [root] [INFO] [line:121]: 开始执行用例[审核失败--项目id已经审核过]，用例参数为:{'loan_id': 39057, 'approved_or_not': True}
+[2022-06-09 10:26:03,362] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:26:03,384] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "PATCH /futureloan/loan/audit HTTP/1.1" 200 None
+[2022-06-09 10:26:03,464] [root] [INFO] [line:130]: 用例[审核失败--项目id已经审核过]执行失败
+[2022-06-09 10:26:03,464] [root] [INFO] [line:131]: 预期结果——>{'code': 2, 'msg': '项目不在审核中状态'}
+[2022-06-09 10:26:03,464] [root] [INFO] [line:132]: 实际结果——>{'code': 2, 'msg': '项目不存在', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:26:03,464] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:26:03,495] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/loan/add HTTP/1.1" 200 None
+[2022-06-09 10:26:03,495] [root] [INFO] [line:100]: 新创建的需要审核的项目id为 13047
+[2022-06-09 10:26:03,495] [root] [INFO] [line:121]: 开始执行用例[审核失败--审核状态为空]，用例参数为:{'loan_id': 13047, 'approved_or_not': None}
+[2022-06-09 10:26:03,495] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:26:03,514] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "PATCH /futureloan/loan/audit HTTP/1.1" 200 None
+[2022-06-09 10:26:03,604] [root] [INFO] [line:136]: 用例[审核失败--审核状态为空]执行成功
+[2022-06-09 10:26:03,604] [root] [INFO] [line:137]: 实际运行结果是{'code': 1, 'msg': 'approved_or_not为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:26:03,604] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:26:03,624] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/loan/add HTTP/1.1" 200 None
+[2022-06-09 10:26:03,624] [root] [INFO] [line:100]: 新创建的需要审核的项目id为 13048
+[2022-06-09 10:26:03,624] [root] [INFO] [line:121]: 开始执行用例[审核失败--审核状态不是布尔值]，用例参数为:{'loan_id': 13048, 'approved_or_not': 1}
+[2022-06-09 10:26:03,624] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:26:03,644] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "PATCH /futureloan/loan/audit HTTP/1.1" 200 None
+[2022-06-09 10:26:03,734] [root] [INFO] [line:130]: 用例[审核失败--审核状态不是布尔值]执行失败
+[2022-06-09 10:26:03,734] [root] [INFO] [line:131]: 预期结果——>{'code': 2, 'msg': 'approved_or_not只能为true或者false'}
+[2022-06-09 10:26:03,734] [root] [INFO] [line:132]: 实际结果——>{'code': 1, 'msg': 'approved_or_not只能为true或者false', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:26:03,734] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:26:03,754] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/loan/add HTTP/1.1" 200 None
+[2022-06-09 10:26:03,754] [root] [INFO] [line:100]: 新创建的需要审核的项目id为 13049
+[2022-06-09 10:26:03,763] [root] [INFO] [line:121]: 开始执行用例[审核失败--审核用户无审核权限]，用例参数为:{'loan_id': 13049, 'approved_or_not': True}
+[2022-06-09 10:26:03,764] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:26:03,784] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "PATCH /futureloan/loan/audit HTTP/1.1" 200 None
+[2022-06-09 10:26:03,884] [root] [INFO] [line:136]: 用例[审核失败--审核用户无审核权限]执行成功
+[2022-06-09 10:26:03,884] [root] [INFO] [line:137]: 实际运行结果是{'code': 2, 'msg': '普通会员不能审核项目，请使用管理员账号', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:26:03,884] [root] [INFO] [line:36]: ********************开始执行投资接口测试用例********************
+[2022-06-09 10:26:03,884] [root] [INFO] [line:41]: 开始执行注册用例
+管理员权限用户的用例参数为:{'mobile_phone': '18501028915', 'pwd': '123456789', 'type': 0, 'reg_name': 'hyean_ad'}
+[2022-06-09 10:26:03,884] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:26:03,934] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/register HTTP/1.1" 200 None
+[2022-06-09 10:26:03,934] [root] [INFO] [line:43]: 注册用例执行成功，管理员权限用户注册结果：{'code': 0, 'msg': 'OK', 'data': {'id': 324349, 'reg_name': 'hyean_ad', 'mobile_phone': '18501028915'}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:26:03,934] [root] [INFO] [line:52]: 开始执行管理员权限用户登录，用例参数为{'mobile_phone': '18501028915', 'pwd': '123456789'}
+[2022-06-09 10:26:03,944] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:26:03,994] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/login HTTP/1.1" 200 None
+[2022-06-09 10:26:03,994] [root] [INFO] [line:54]: 管理员权限用户登录成功，用户登录结果返回：{'code': 0, 'msg': 'OK', 'data': {'id': 324349, 'leave_amount': 0.0, 'mobile_phone': '18501028915', 'reg_name': 'hyean_ad', 'reg_time': '2022-06-09 10:26:03.0', 'type': 0, 'token_info': {'token_type': 'Bearer', 'expires_in': '2022-06-09 10:31:03', 'token': 'eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjMyNDM0OSwiZXhwIjoxNjU0NzQxODYzfQ.7DO1-TONNc0uKkVKSqvZJYxtzGc0n3FkXE2bHcNu-3zdajzBV8Hju2eJXZFOJjVBfPMi9NsmEkCUbTgtzO70Lg'}}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:26:03,994] [root] [INFO] [line:61]: 管理员权限登录的用户，用于鉴权的token值为 Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjMyNDM0OSwiZXhwIjoxNjU0NzQxODYzfQ.7DO1-TONNc0uKkVKSqvZJYxtzGc0n3FkXE2bHcNu-3zdajzBV8Hju2eJXZFOJjVBfPMi9NsmEkCUbTgtzO70Lg
+[2022-06-09 10:26:03,994] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:26:04,014] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/loan/add HTTP/1.1" 200 None
+[2022-06-09 10:26:04,014] [root] [INFO] [line:80]: 新创建的需要审核的项目id为 13050
+[2022-06-09 10:26:04,024] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:26:04,044] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/loan/add HTTP/1.1" 200 None
+[2022-06-09 10:26:04,044] [root] [INFO] [line:84]: 新创建的不需要审核的项目id为 13051
+[2022-06-09 10:26:04,044] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:26:04,064] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "PATCH /futureloan/loan/audit HTTP/1.1" 200 None
+[2022-06-09 10:26:04,064] [root] [INFO] [line:93]: 项目审核的headers={'X-Lemonban-Media-Type': 'lemonban.v2', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjMyNDM0OSwiZXhwIjoxNjU0NzQxODYzfQ.7DO1-TONNc0uKkVKSqvZJYxtzGc0n3FkXE2bHcNu-3zdajzBV8Hju2eJXZFOJjVBfPMi9NsmEkCUbTgtzO70Lg', 'Content-Type': 'application/json'}
+[2022-06-09 10:26:04,064] [root] [INFO] [line:94]: 项目审核的data={'loan_id': '13050', 'approved_or_not': True}
+[2022-06-09 10:26:04,074] [root] [INFO] [line:95]: 项目 13050审核结果为：{'code': 0, 'msg': 'OK', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:26:04,075] [root] [INFO] [line:121]: 开始执行用例[投资成功]，用例参数为:{'member_id': 324349, 'loan_id': 13050, 'amount': '200'}
+[2022-06-09 10:26:04,075] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:26:04,104] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/invest HTTP/1.1" 200 None
+[2022-06-09 10:26:04,224] [root] [INFO] [line:136]: 用例[投资成功]执行成功
+[2022-06-09 10:26:04,234] [root] [INFO] [line:137]: 实际运行结果是{'code': 0, 'msg': 'OK', 'data': {'id': 3007, 'member_id': 324349, 'loan_id': 13050, 'amount': 200.0, 'create_time': '2022-06-09 10:26:03', 'is_valid': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:26:04,234] [root] [INFO] [line:121]: 开始执行用例[投资失败--会员id为空]，用例参数为:{'member_id': None, 'loan_id': 13050, 'amount': '200'}
+[2022-06-09 10:26:04,234] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:26:04,244] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/invest HTTP/1.1" 200 None
+[2022-06-09 10:26:04,334] [root] [INFO] [line:136]: 用例[投资失败--会员id为空]执行成功
+[2022-06-09 10:26:04,334] [root] [INFO] [line:137]: 实际运行结果是{'code': 1, 'msg': '会员id为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:26:04,334] [root] [INFO] [line:121]: 开始执行用例[投资失败--会员id不存在]，用例参数为:{'member_id': 1222324349, 'loan_id': 13050, 'amount': '200'}
+[2022-06-09 10:26:04,334] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:26:04,354] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/invest HTTP/1.1" 200 None
+[2022-06-09 10:26:04,434] [root] [INFO] [line:136]: 用例[投资失败--会员id不存在]执行成功
+[2022-06-09 10:26:04,434] [root] [INFO] [line:137]: 实际运行结果是{'code': 2, 'msg': '会员不存在', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:26:04,434] [root] [INFO] [line:121]: 开始执行用例[投资失败--标id为空]，用例参数为:{'member_id': 324349, 'loan_id': None, 'amount': '200'}
+[2022-06-09 10:26:04,434] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:26:04,454] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/invest HTTP/1.1" 200 None
+[2022-06-09 10:26:04,544] [root] [INFO] [line:136]: 用例[投资失败--标id为空]执行成功
+[2022-06-09 10:26:04,544] [root] [INFO] [line:137]: 实际运行结果是{'code': 1, 'msg': '项目id为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:26:04,549] [root] [INFO] [line:121]: 开始执行用例[投资失败--标id不存在]，用例参数为:{'member_id': 324349, 'loan_id': 1213050, 'amount': '200'}
+[2022-06-09 10:26:04,549] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:26:04,564] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/invest HTTP/1.1" 200 None
+[2022-06-09 10:26:04,644] [root] [INFO] [line:136]: 用例[投资失败--标id不存在]执行成功
+[2022-06-09 10:26:04,644] [root] [INFO] [line:137]: 实际运行结果是{'code': 2, 'msg': '项目不存在', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:26:04,644] [root] [INFO] [line:121]: 开始执行用例[投资失败--投资金额为空为空]，用例参数为:{'member_id': 324349, 'loan_id': 13050, 'amount': None}
+[2022-06-09 10:26:04,644] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:26:04,664] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/invest HTTP/1.1" 200 None
+[2022-06-09 10:26:04,744] [root] [INFO] [line:136]: 用例[投资失败--投资金额为空为空]执行成功
+[2022-06-09 10:26:04,754] [root] [INFO] [line:137]: 实际运行结果是{'code': 1, 'msg': '余额为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:26:04,754] [root] [INFO] [line:121]: 开始执行用例[投资失败--投资金额不能被100整除]，用例参数为:{'member_id': 324349, 'loan_id': 13050, 'amount': '2005'}
+[2022-06-09 10:26:04,756] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:26:04,764] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/invest HTTP/1.1" 200 None
+[2022-06-09 10:26:04,876] [root] [INFO] [line:136]: 用例[投资失败--投资金额不能被100整除]执行成功
+[2022-06-09 10:26:04,877] [root] [INFO] [line:137]: 实际运行结果是{'code': 2, 'msg': '充值金额必须大于100，并且可以被100整除', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:26:04,877] [root] [INFO] [line:121]: 开始执行用例[投资失败--投资金额小于0]，用例参数为:{'member_id': 324349, 'loan_id': 13050, 'amount': '-1200'}
+[2022-06-09 10:26:04,879] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:26:04,896] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/invest HTTP/1.1" 200 None
+[2022-06-09 10:26:04,974] [root] [INFO] [line:136]: 用例[投资失败--投资金额小于0]执行成功
+[2022-06-09 10:26:04,974] [root] [INFO] [line:137]: 实际运行结果是{'code': 2, 'msg': '充值金额必须大于100，并且可以被100整除', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:26:04,984] [root] [INFO] [line:121]: 开始执行用例[投资失败--投资金额大于剩余所需金额]，用例参数为:{'member_id': 324349, 'loan_id': 13050, 'amount': '20000000'}
+[2022-06-09 10:26:04,984] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:26:05,004] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/invest HTTP/1.1" 200 None
+[2022-06-09 10:26:05,084] [root] [INFO] [line:130]: 用例[投资失败--投资金额大于剩余所需金额]执行失败
+[2022-06-09 10:26:05,084] [root] [INFO] [line:131]: 预期结果——>{'code': 2, 'msg': '该标可投金额不足,可投金额：18000.0'}
+[2022-06-09 10:26:05,094] [root] [INFO] [line:132]: 实际结果——>{'code': 2, 'msg': '该标可投金额不足,可投金额：199800.0', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:26:05,094] [root] [INFO] [line:121]: 开始执行用例[投资失败--标状态不是【竞标中】]，用例参数为:{'member_id': 324349, 'loan_id': 13051, 'amount': '900'}
+[2022-06-09 10:26:05,094] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:26:05,114] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/invest HTTP/1.1" 200 None
+[2022-06-09 10:26:05,194] [root] [INFO] [line:136]: 用例[投资失败--标状态不是【竞标中】]执行成功
+[2022-06-09 10:26:05,194] [root] [INFO] [line:137]: 实际运行结果是{'code': 2, 'msg': '该项目不在竞标中状态', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:07,364] [root] [INFO] [line:30]: ********************开始执行登录接口测试用例********************
+[2022-06-09 10:30:07,364] [root] [INFO] [line:42]: 开始执行用例[登录成功]，用例参数为:{'mobile_phone': '13012345678', 'pwd': '12344321'}
+[2022-06-09 10:30:07,374] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:07,433] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/login HTTP/1.1" 200 None
+[2022-06-09 10:30:07,515] [root] [INFO] [line:52]: 用例[登录成功]执行失败
+[2022-06-09 10:30:07,515] [root] [INFO] [line:53]: 预期结果——>{'code': 0, 'msg': 'OK'}
+[2022-06-09 10:30:07,515] [root] [INFO] [line:54]: 实际结果——>{'code': 1001, 'msg': '账号信息错误', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:07,515] [root] [INFO] [line:42]: 开始执行用例[登录失败--手机号为空]，用例参数为:{'mobile_phone': '', 'pwd': '12344322'}
+[2022-06-09 10:30:07,515] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:07,535] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/login HTTP/1.1" 200 None
+[2022-06-09 10:30:07,613] [root] [INFO] [line:58]: 用例[登录失败--手机号为空]执行成功
+[2022-06-09 10:30:07,613] [root] [INFO] [line:59]: 实际运行结果是{'code': 1, 'msg': '手机号码为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:07,613] [root] [INFO] [line:42]: 开始执行用例[登录失败--密码为空]，用例参数为:{'mobile_phone': '13012345678', 'pwd': ''}
+[2022-06-09 10:30:07,623] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:07,634] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/login HTTP/1.1" 200 None
+[2022-06-09 10:30:07,733] [root] [INFO] [line:58]: 用例[登录失败--密码为空]执行成功
+[2022-06-09 10:30:07,733] [root] [INFO] [line:59]: 实际运行结果是{'code': 1, 'msg': '密码为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:07,733] [root] [INFO] [line:42]: 开始执行用例[登录失败--手机号+密码为空]，用例参数为:{'mobile_phone': '', 'pwd': ''}
+[2022-06-09 10:30:07,733] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:07,754] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/login HTTP/1.1" 200 None
+[2022-06-09 10:30:07,834] [root] [INFO] [line:58]: 用例[登录失败--手机号+密码为空]执行成功
+[2022-06-09 10:30:07,834] [root] [INFO] [line:59]: 实际运行结果是{'code': 1, 'msg': '手机号码为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:07,834] [root] [INFO] [line:42]: 开始执行用例[登录失败--账号未注册]，用例参数为:{'mobile_phone': '13012345670', 'pwd': '12344325'}
+[2022-06-09 10:30:07,834] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:07,884] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/login HTTP/1.1" 200 None
+[2022-06-09 10:30:07,984] [root] [INFO] [line:58]: 用例[登录失败--账号未注册]执行成功
+[2022-06-09 10:30:07,984] [root] [INFO] [line:59]: 实际运行结果是{'code': 1001, 'msg': '账号信息错误', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:07,984] [root] [INFO] [line:42]: 开始执行用例[登录失败--手机号格式不对]，用例参数为:{'mobile_phone': '130123456700', 'pwd': '12344326'}
+[2022-06-09 10:30:07,984] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:08,004] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/login HTTP/1.1" 200 None
+[2022-06-09 10:30:08,084] [root] [INFO] [line:58]: 用例[登录失败--手机号格式不对]执行成功
+[2022-06-09 10:30:08,084] [root] [INFO] [line:59]: 实际运行结果是{'code': 2, 'msg': '无效的手机格式', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:08,084] [root] [INFO] [line:42]: 开始执行用例[登录失败--密码错误]，用例参数为:{'mobile_phone': '13012345678', 'pwd': '12344323'}
+[2022-06-09 10:30:08,084] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:08,134] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/login HTTP/1.1" 200 None
+[2022-06-09 10:30:08,223] [root] [INFO] [line:58]: 用例[登录失败--密码错误]执行成功
+[2022-06-09 10:30:08,223] [root] [INFO] [line:59]: 实际运行结果是{'code': 1001, 'msg': '账号信息错误', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:08,223] [root] [INFO] [line:37]: ********************开始执行充值接口测试用例********************
+[2022-06-09 10:30:08,223] [root] [INFO] [line:43]: 开始执行注册用例，用例参数为:{'mobile_phone': '18542523864', 'pwd': '123456789', 'type': 0, 'reg_name': 'hyean'}
+[2022-06-09 10:30:08,223] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:08,294] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/register HTTP/1.1" 200 None
+[2022-06-09 10:30:08,303] [root] [INFO] [line:45]: 注册用例执行成功，注册结果返回{'code': 0, 'msg': 'OK', 'data': {'id': 324350, 'reg_name': 'hyean', 'mobile_phone': '18542523864'}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:08,304] [root] [INFO] [line:56]: 开始执行登录用例，用例参数为:{'mobile_phone': '18542523864', 'pwd': '123456789'}
+[2022-06-09 10:30:08,314] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:08,364] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/login HTTP/1.1" 200 None
+[2022-06-09 10:30:08,364] [root] [INFO] [line:58]: 登录用例执行成功，登录结果返回{'code': 0, 'msg': 'OK', 'data': {'id': 324350, 'leave_amount': 0.0, 'mobile_phone': '18542523864', 'reg_name': 'hyean', 'reg_time': '2022-06-09 10:30:07.0', 'type': 0, 'token_info': {'token_type': 'Bearer', 'expires_in': '2022-06-09 10:35:08', 'token': 'eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjMyNDM1MCwiZXhwIjoxNjU0NzQyMTA4fQ.p4o-JbaEItLeEFGYYfWtUa5asZygxskagBF47vnA0aDwh0Hy3D8OCpf0rMJJNGLSabrJglVeBzTfDZEQfY-SBQ'}}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:08,364] [root] [INFO] [line:67]: 登录执行成功，可用于鉴权的token值为 Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjMyNDM1MCwiZXhwIjoxNjU0NzQyMTA4fQ.p4o-JbaEItLeEFGYYfWtUa5asZygxskagBF47vnA0aDwh0Hy3D8OCpf0rMJJNGLSabrJglVeBzTfDZEQfY-SBQ
+[2022-06-09 10:30:08,364] [root] [INFO] [line:90]: 开始执行用例[充值成功]，用例参数为:{'member_id': 324350, 'amount': 200000}
+[2022-06-09 10:30:08,374] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:08,395] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/recharge HTTP/1.1" 200 None
+[2022-06-09 10:30:08,483] [root] [INFO] [line:105]: 用例[充值成功]执行成功
+[2022-06-09 10:30:08,483] [root] [INFO] [line:106]: 实际运行结果是{'code': 0, 'msg': 'OK', 'data': {'id': 324350, 'leave_amount': 200000.0, 'mobile_phone': '18542523864', 'reg_name': 'hyean', 'reg_time': '2022-06-09 10:30:07.0', 'type': 0}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:08,483] [root] [INFO] [line:90]: 开始执行用例[充值成功--金额为0.1]，用例参数为:{'member_id': 324350, 'amount': 0.1}
+[2022-06-09 10:30:08,485] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:08,504] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/recharge HTTP/1.1" 200 None
+[2022-06-09 10:30:08,585] [root] [INFO] [line:105]: 用例[充值成功--金额为0.1]执行成功
+[2022-06-09 10:30:08,585] [root] [INFO] [line:106]: 实际运行结果是{'code': 0, 'msg': 'OK', 'data': {'id': 324350, 'leave_amount': 200000.1, 'mobile_phone': '18542523864', 'reg_name': 'hyean', 'reg_time': '2022-06-09 10:30:07.0', 'type': 0}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:08,593] [root] [INFO] [line:90]: 开始执行用例[充值成功--金额为50万]，用例参数为:{'member_id': 324350, 'amount': 500000}
+[2022-06-09 10:30:08,593] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:08,614] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/recharge HTTP/1.1" 200 None
+[2022-06-09 10:30:08,694] [root] [INFO] [line:105]: 用例[充值成功--金额为50万]执行成功
+[2022-06-09 10:30:08,694] [root] [INFO] [line:106]: 实际运行结果是{'code': 0, 'msg': 'OK', 'data': {'id': 324350, 'leave_amount': 700000.1, 'mobile_phone': '18542523864', 'reg_name': 'hyean', 'reg_time': '2022-06-09 10:30:07.0', 'type': 0}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:08,694] [root] [INFO] [line:90]: 开始执行用例[充值成功--金额有2位小数]，用例参数为:{'member_id': 324350, 'amount': 50000.07}
+[2022-06-09 10:30:08,694] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:08,734] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/recharge HTTP/1.1" 200 None
+[2022-06-09 10:30:08,814] [root] [INFO] [line:105]: 用例[充值成功--金额有2位小数]执行成功
+[2022-06-09 10:30:08,814] [root] [INFO] [line:106]: 实际运行结果是{'code': 0, 'msg': 'OK', 'data': {'id': 324350, 'leave_amount': 750000.17, 'mobile_phone': '18542523864', 'reg_name': 'hyean', 'reg_time': '2022-06-09 10:30:07.0', 'type': 0}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:08,814] [root] [INFO] [line:90]: 开始执行用例[充值失败--金额等于0]，用例参数为:{'member_id': 324350, 'amount': 0}
+[2022-06-09 10:30:08,814] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:08,844] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/recharge HTTP/1.1" 200 None
+[2022-06-09 10:30:08,934] [root] [INFO] [line:99]: 用例[充值失败--金额等于0]执行失败
+[2022-06-09 10:30:08,934] [root] [INFO] [line:100]: 预期结果——>{'code': 2, 'msg': '余额必须大于0并且小于或者等于500000'}
+[2022-06-09 10:30:08,934] [root] [INFO] [line:101]: 实际结果——>{'code': 0, 'msg': 'OK', 'data': {'id': 324350, 'leave_amount': 750000.17, 'mobile_phone': '18542523864', 'reg_name': 'hyean', 'reg_time': '2022-06-09 10:30:07.0', 'type': 0}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:08,934] [root] [INFO] [line:90]: 开始执行用例[充值失败--金额小于0]，用例参数为:{'member_id': 324350, 'amount': -1000}
+[2022-06-09 10:30:08,934] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:08,953] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/recharge HTTP/1.1" 200 None
+[2022-06-09 10:30:09,064] [root] [INFO] [line:105]: 用例[充值失败--金额小于0]执行成功
+[2022-06-09 10:30:09,064] [root] [INFO] [line:106]: 实际运行结果是{'code': 2, 'msg': '余额必须大于0并且小于或者等于500000', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:09,064] [root] [INFO] [line:90]: 开始执行用例[充值失败--金额大于50万]，用例参数为:{'member_id': 324350, 'amount': 500002}
+[2022-06-09 10:30:09,064] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:09,084] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/recharge HTTP/1.1" 200 None
+[2022-06-09 10:30:09,172] [root] [INFO] [line:105]: 用例[充值失败--金额大于50万]执行成功
+[2022-06-09 10:30:09,172] [root] [INFO] [line:106]: 实际运行结果是{'code': 2, 'msg': '余额必须大于0并且小于或者等于500000', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:09,174] [root] [INFO] [line:90]: 开始执行用例[充值失败--用户不存在]，用例参数为:{'member_id': '1000001', 'amount': 5000}
+[2022-06-09 10:30:09,174] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:09,192] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/recharge HTTP/1.1" 200 None
+[2022-06-09 10:30:09,274] [root] [INFO] [line:105]: 用例[充值失败--用户不存在]执行成功
+[2022-06-09 10:30:09,274] [root] [INFO] [line:106]: 实际运行结果是{'code': 1007, 'msg': '无权限访问，请检查参数', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:09,274] [root] [INFO] [line:90]: 开始执行用例[充值失败--用户id为空]，用例参数为:{'amount': 50000}
+[2022-06-09 10:30:09,274] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:09,284] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/recharge HTTP/1.1" 200 None
+[2022-06-09 10:30:09,373] [root] [INFO] [line:105]: 用例[充值失败--用户id为空]执行成功
+[2022-06-09 10:30:09,373] [root] [INFO] [line:106]: 实际运行结果是{'code': 1, 'msg': '用户id为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:09,373] [root] [INFO] [line:90]: 开始执行用例[充值失败--用户id不是当前登录的用户id]，用例参数为:{'member_id': 8988, 'amount': 5000}
+[2022-06-09 10:30:09,373] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:09,394] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/recharge HTTP/1.1" 200 None
+[2022-06-09 10:30:09,464] [root] [INFO] [line:105]: 用例[充值失败--用户id不是当前登录的用户id]执行成功
+[2022-06-09 10:30:09,464] [root] [INFO] [line:106]: 实际运行结果是{'code': 1007, 'msg': '无权限访问，请检查参数', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:09,464] [root] [INFO] [line:90]: 开始执行用例[充值失败--充值金额为空]，用例参数为:{'member_id': 324350}
+[2022-06-09 10:30:09,473] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:09,484] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/recharge HTTP/1.1" 200 None
+[2022-06-09 10:30:09,584] [root] [INFO] [line:99]: 用例[充值失败--充值金额为空]执行失败
+[2022-06-09 10:30:09,584] [root] [INFO] [line:100]: 预期结果——>{'code': 1, 'msg': '充值余额为空'}
+[2022-06-09 10:30:09,594] [root] [INFO] [line:101]: 实际结果——>{'code': 2, 'msg': '数字格式化异常', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:09,594] [root] [INFO] [line:90]: 开始执行用例[充值失败--充值金额有3小数]，用例参数为:{'member_id': 324350, 'amount': 50000.007}
+[2022-06-09 10:30:09,594] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:09,604] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/recharge HTTP/1.1" 200 None
+[2022-06-09 10:30:09,684] [root] [INFO] [line:105]: 用例[充值失败--充值金额有3小数]执行成功
+[2022-06-09 10:30:09,684] [root] [INFO] [line:106]: 实际运行结果是{'code': 2, 'msg': '余额小数超过两位', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:09,684] [root] [INFO] [line:90]: 开始执行用例[充值失败--用户id为小数]，用例参数为:{'member_id': 324350.0, 'amount': 50000}
+[2022-06-09 10:30:09,684] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:09,714] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/recharge HTTP/1.1" 200 None
+[2022-06-09 10:30:09,793] [root] [INFO] [line:105]: 用例[充值失败--用户id为小数]执行成功
+[2022-06-09 10:30:09,793] [root] [INFO] [line:106]: 实际运行结果是{'code': 2, 'msg': '数字格式化异常', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:09,874] [root] [INFO] [line:85]: 用例[充值失败--充值金额为非数字]-->数据格式化错误,excel读取到的入参为{"member_id":324350,"amount":5w}
+[2022-06-09 10:30:09,874] [root] [ERROR] [line:86]: invalid syntax (<string>, line 1)
+[2022-06-09 10:30:09,874] [root] [INFO] [line:39]: ********************开始执行提现接口测试用例********************
+[2022-06-09 10:30:09,874] [root] [INFO] [line:44]: 开始执行注册用例，用例参数为:{'mobile_phone': '18532005527', 'pwd': '123456789', 'type': 0, 'reg_name': 'hyean'}
+[2022-06-09 10:30:09,874] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:09,934] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/register HTTP/1.1" 200 None
+[2022-06-09 10:30:09,934] [root] [INFO] [line:46]: 注册用例执行成功，注册结果返回{'code': 0, 'msg': 'OK', 'data': {'id': 324351, 'reg_name': 'hyean', 'mobile_phone': '18532005527'}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:09,944] [root] [INFO] [line:54]: 开始执行登录用例，用例参数为:{'mobile_phone': '18532005527', 'pwd': '123456789'}
+[2022-06-09 10:30:09,954] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:10,004] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/login HTTP/1.1" 200 None
+[2022-06-09 10:30:10,004] [root] [INFO] [line:56]: 登录用例执行成功，登录结果返回{'code': 0, 'msg': 'OK', 'data': {'id': 324351, 'leave_amount': 0.0, 'mobile_phone': '18532005527', 'reg_name': 'hyean', 'reg_time': '2022-06-09 10:30:09.0', 'type': 0, 'token_info': {'token_type': 'Bearer', 'expires_in': '2022-06-09 10:35:09', 'token': 'eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjMyNDM1MSwiZXhwIjoxNjU0NzQyMTA5fQ.gjKDxG7yGyJ51tx4D1KoN_b3BMw7GXltaSTvyW1zkWs53_aY1c-FsJM5L-UqMqPWqQgPGZUauGI90gYug2Rg5g'}}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:10,014] [root] [INFO] [line:63]: 登录执行成功，可用于鉴权的token值为 Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjMyNDM1MSwiZXhwIjoxNjU0NzQyMTA5fQ.gjKDxG7yGyJ51tx4D1KoN_b3BMw7GXltaSTvyW1zkWs53_aY1c-FsJM5L-UqMqPWqQgPGZUauGI90gYug2Rg5g
+[2022-06-09 10:30:10,014] [root] [INFO] [line:71]: 开始执行充值用例，用例参数为:{'member_id': 324351, 'amount': 20000}
+[2022-06-09 10:30:10,024] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:10,049] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/recharge HTTP/1.1" 200 None
+[2022-06-09 10:30:10,049] [root] [INFO] [line:73]: 充值用例执行成功，登录结果返回{'code': 0, 'msg': 'OK', 'data': {'id': 324351, 'leave_amount': 20000.0, 'mobile_phone': '18532005527', 'reg_name': 'hyean', 'reg_time': '2022-06-09 10:30:09.0', 'type': 0}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:10,049] [root] [INFO] [line:95]: 开始执行用例[提现成功]，用例参数为:{'member_id': 324351, 'amount': 200000}
+[2022-06-09 10:30:10,054] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:10,075] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/withdraw HTTP/1.1" 200 None
+[2022-06-09 10:30:10,163] [root] [INFO] [line:105]: 用例[提现成功]执行失败
+[2022-06-09 10:30:10,163] [root] [INFO] [line:106]: 预期结果——>{'code': 0, 'msg': 'OK'}
+[2022-06-09 10:30:10,163] [root] [INFO] [line:107]: 实际结果——>{'code': 1002, 'msg': '余额不足', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:10,163] [root] [INFO] [line:71]: 开始执行充值用例，用例参数为:{'member_id': 324351, 'amount': 20000}
+[2022-06-09 10:30:10,163] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:10,194] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/recharge HTTP/1.1" 200 None
+[2022-06-09 10:30:10,194] [root] [INFO] [line:73]: 充值用例执行成功，登录结果返回{'code': 0, 'msg': 'OK', 'data': {'id': 324351, 'leave_amount': 40000.0, 'mobile_phone': '18532005527', 'reg_name': 'hyean', 'reg_time': '2022-06-09 10:30:09.0', 'type': 0}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:10,204] [root] [INFO] [line:95]: 开始执行用例[提现成功--金额有一位小数]，用例参数为:{'member_id': 324351, 'amount': 20000.1}
+[2022-06-09 10:30:10,204] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:10,234] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/withdraw HTTP/1.1" 200 None
+[2022-06-09 10:30:10,354] [root] [INFO] [line:111]: 用例[提现成功--金额有一位小数]执行成功
+[2022-06-09 10:30:10,354] [root] [INFO] [line:112]: 实际运行结果是{'code': 0, 'msg': 'OK', 'data': {'id': 324351, 'leave_amount': 19999.9, 'mobile_phone': '18532005527', 'reg_name': 'hyean', 'reg_time': '2022-06-09 10:30:09.0', 'type': 0}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:10,354] [root] [INFO] [line:71]: 开始执行充值用例，用例参数为:{'member_id': 324351, 'amount': 20000}
+[2022-06-09 10:30:10,354] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:10,384] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/recharge HTTP/1.1" 200 None
+[2022-06-09 10:30:10,385] [root] [INFO] [line:73]: 充值用例执行成功，登录结果返回{'code': 0, 'msg': 'OK', 'data': {'id': 324351, 'leave_amount': 39999.9, 'mobile_phone': '18532005527', 'reg_name': 'hyean', 'reg_time': '2022-06-09 10:30:09.0', 'type': 0}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:10,385] [root] [INFO] [line:95]: 开始执行用例[提现成功--金额有2位小数]，用例参数为:{'member_id': 324351, 'amount': 2000.01}
+[2022-06-09 10:30:10,385] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:10,404] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/withdraw HTTP/1.1" 200 None
+[2022-06-09 10:30:10,497] [root] [INFO] [line:111]: 用例[提现成功--金额有2位小数]执行成功
+[2022-06-09 10:30:10,497] [root] [INFO] [line:112]: 实际运行结果是{'code': 0, 'msg': 'OK', 'data': {'id': 324351, 'leave_amount': 37999.89, 'mobile_phone': '18532005527', 'reg_name': 'hyean', 'reg_time': '2022-06-09 10:30:09.0', 'type': 0}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:10,498] [root] [INFO] [line:71]: 开始执行充值用例，用例参数为:{'member_id': 324351, 'amount': 20000}
+[2022-06-09 10:30:10,499] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:10,524] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/recharge HTTP/1.1" 200 None
+[2022-06-09 10:30:10,524] [root] [INFO] [line:73]: 充值用例执行成功，登录结果返回{'code': 0, 'msg': 'OK', 'data': {'id': 324351, 'leave_amount': 57999.89, 'mobile_phone': '18532005527', 'reg_name': 'hyean', 'reg_time': '2022-06-09 10:30:09.0', 'type': 0}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:10,524] [root] [INFO] [line:95]: 开始执行用例[提现失败--金额有3位小数]，用例参数为:{'member_id': 324351, 'amount': 2000.001}
+[2022-06-09 10:30:10,524] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:10,543] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/withdraw HTTP/1.1" 200 None
+[2022-06-09 10:30:10,624] [root] [INFO] [line:111]: 用例[提现失败--金额有3位小数]执行成功
+[2022-06-09 10:30:10,633] [root] [INFO] [line:112]: 实际运行结果是{'code': 2, 'msg': '余额小数超过两位', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:10,633] [root] [INFO] [line:71]: 开始执行充值用例，用例参数为:{'member_id': 324351, 'amount': 20000}
+[2022-06-09 10:30:10,634] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:10,654] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/recharge HTTP/1.1" 200 None
+[2022-06-09 10:30:10,654] [root] [INFO] [line:73]: 充值用例执行成功，登录结果返回{'code': 0, 'msg': 'OK', 'data': {'id': 324351, 'leave_amount': 77999.89, 'mobile_phone': '18532005527', 'reg_name': 'hyean', 'reg_time': '2022-06-09 10:30:09.0', 'type': 0}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:10,654] [root] [INFO] [line:95]: 开始执行用例[提现失败--用户id不存在]，用例参数为:{'member_id': 10009, 'amount': 100000}
+[2022-06-09 10:30:10,663] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:10,684] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/withdraw HTTP/1.1" 200 None
+[2022-06-09 10:30:10,764] [root] [INFO] [line:111]: 用例[提现失败--用户id不存在]执行成功
+[2022-06-09 10:30:10,764] [root] [INFO] [line:112]: 实际运行结果是{'code': 2, 'msg': '会员不存在', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:10,764] [root] [INFO] [line:71]: 开始执行充值用例，用例参数为:{'member_id': 324351, 'amount': 20000}
+[2022-06-09 10:30:10,764] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:10,794] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/recharge HTTP/1.1" 200 None
+[2022-06-09 10:30:10,794] [root] [INFO] [line:73]: 充值用例执行成功，登录结果返回{'code': 0, 'msg': 'OK', 'data': {'id': 324351, 'leave_amount': 97999.89, 'mobile_phone': '18532005527', 'reg_name': 'hyean', 'reg_time': '2022-06-09 10:30:09.0', 'type': 0}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:10,794] [root] [INFO] [line:95]: 开始执行用例[提现失败--用户id为空]，用例参数为:{'amount': 20000}
+[2022-06-09 10:30:10,794] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:10,804] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/withdraw HTTP/1.1" 200 None
+[2022-06-09 10:30:10,915] [root] [INFO] [line:111]: 用例[提现失败--用户id为空]执行成功
+[2022-06-09 10:30:10,915] [root] [INFO] [line:112]: 实际运行结果是{'code': 1, 'msg': '会员id为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:10,915] [root] [INFO] [line:71]: 开始执行充值用例，用例参数为:{'member_id': 324351, 'amount': 20000}
+[2022-06-09 10:30:10,915] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:10,944] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/recharge HTTP/1.1" 200 None
+[2022-06-09 10:30:10,944] [root] [INFO] [line:73]: 充值用例执行成功，登录结果返回{'code': 0, 'msg': 'OK', 'data': {'id': 324351, 'leave_amount': 117999.89, 'mobile_phone': '18532005527', 'reg_name': 'hyean', 'reg_time': '2022-06-09 10:30:09.0', 'type': 0}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:10,944] [root] [INFO] [line:95]: 开始执行用例[提现失败--提现金额小于0]，用例参数为:{'member_id': 324351, 'amount': -2000}
+[2022-06-09 10:30:10,944] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:10,964] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/withdraw HTTP/1.1" 200 None
+[2022-06-09 10:30:11,044] [root] [INFO] [line:111]: 用例[提现失败--提现金额小于0]执行成功
+[2022-06-09 10:30:11,044] [root] [INFO] [line:112]: 实际运行结果是{'code': 2, 'msg': '余额必须大于0并且小于或者等于5000000', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:11,044] [root] [INFO] [line:71]: 开始执行充值用例，用例参数为:{'member_id': 324351, 'amount': 20000}
+[2022-06-09 10:30:11,044] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:11,075] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/recharge HTTP/1.1" 200 None
+[2022-06-09 10:30:11,075] [root] [INFO] [line:73]: 充值用例执行成功，登录结果返回{'code': 0, 'msg': 'OK', 'data': {'id': 324351, 'leave_amount': 137999.89, 'mobile_phone': '18532005527', 'reg_name': 'hyean', 'reg_time': '2022-06-09 10:30:09.0', 'type': 0}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:11,075] [root] [INFO] [line:95]: 开始执行用例[提现失败--提现金额大于50万]，用例参数为:{'member_id': 324351, 'amount': 500000.1}
+[2022-06-09 10:30:11,075] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:11,094] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/withdraw HTTP/1.1" 200 None
+[2022-06-09 10:30:11,203] [root] [INFO] [line:111]: 用例[提现失败--提现金额大于50万]执行成功
+[2022-06-09 10:30:11,203] [root] [INFO] [line:112]: 实际运行结果是{'code': 2, 'msg': '余额必须大于0并且小于或者等于5000000', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:11,203] [root] [INFO] [line:71]: 开始执行充值用例，用例参数为:{'member_id': 324351, 'amount': 20000}
+[2022-06-09 10:30:11,203] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:11,235] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/recharge HTTP/1.1" 200 None
+[2022-06-09 10:30:11,235] [root] [INFO] [line:73]: 充值用例执行成功，登录结果返回{'code': 0, 'msg': 'OK', 'data': {'id': 324351, 'leave_amount': 157999.89, 'mobile_phone': '18532005527', 'reg_name': 'hyean', 'reg_time': '2022-06-09 10:30:09.0', 'type': 0}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:11,235] [root] [INFO] [line:95]: 开始执行用例[提现失败--提现金额为空]，用例参数为:{'member_id': 324351}
+[2022-06-09 10:30:11,235] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:11,254] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/withdraw HTTP/1.1" 200 None
+[2022-06-09 10:30:11,335] [root] [INFO] [line:111]: 用例[提现失败--提现金额为空]执行成功
+[2022-06-09 10:30:11,335] [root] [INFO] [line:112]: 实际运行结果是{'code': 1, 'msg': '余额为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:11,335] [root] [INFO] [line:71]: 开始执行充值用例，用例参数为:{'member_id': 324351, 'amount': 20000}
+[2022-06-09 10:30:11,335] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:11,364] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/recharge HTTP/1.1" 200 None
+[2022-06-09 10:30:11,364] [root] [INFO] [line:73]: 充值用例执行成功，登录结果返回{'code': 0, 'msg': 'OK', 'data': {'id': 324351, 'leave_amount': 177999.89, 'mobile_phone': '18532005527', 'reg_name': 'hyean', 'reg_time': '2022-06-09 10:30:09.0', 'type': 0}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:11,364] [root] [INFO] [line:95]: 开始执行用例[提现失败--用户id为小数]，用例参数为:{'member_id': 324351.0, 'amount': 100000}
+[2022-06-09 10:30:11,364] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:11,384] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/withdraw HTTP/1.1" 200 None
+[2022-06-09 10:30:11,464] [root] [INFO] [line:111]: 用例[提现失败--用户id为小数]执行成功
+[2022-06-09 10:30:11,464] [root] [INFO] [line:112]: 实际运行结果是{'code': 2, 'msg': '数值参数格式不正确', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:11,464] [root] [INFO] [line:71]: 开始执行充值用例，用例参数为:{'member_id': 324351, 'amount': 20000}
+[2022-06-09 10:30:11,464] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:11,495] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/recharge HTTP/1.1" 200 None
+[2022-06-09 10:30:11,495] [root] [INFO] [line:73]: 充值用例执行成功，登录结果返回{'code': 0, 'msg': 'OK', 'data': {'id': 324351, 'leave_amount': 197999.89, 'mobile_phone': '18532005527', 'reg_name': 'hyean', 'reg_time': '2022-06-09 10:30:09.0', 'type': 0}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:11,574] [root] [INFO] [line:90]: 用例[提现失败--提现金额为非数字]-->数据格式化错误,excel读取到的入参为{"member_id":324351,"amount":50万}
+[2022-06-09 10:30:11,574] [root] [ERROR] [line:91]: invalid syntax (<string>, line 1)
+[2022-06-09 10:30:11,574] [root] [INFO] [line:71]: 开始执行充值用例，用例参数为:{'member_id': 324351, 'amount': 20000}
+[2022-06-09 10:30:11,583] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:11,604] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/recharge HTTP/1.1" 200 None
+[2022-06-09 10:30:11,604] [root] [INFO] [line:73]: 充值用例执行成功，登录结果返回{'code': 0, 'msg': 'OK', 'data': {'id': 324351, 'leave_amount': 217999.89, 'mobile_phone': '18532005527', 'reg_name': 'hyean', 'reg_time': '2022-06-09 10:30:09.0', 'type': 0}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:11,604] [root] [INFO] [line:95]: 开始执行用例[提现失败--用户id为非数字]，用例参数为:{'member_id': 'hyean', 'amount': 100000}
+[2022-06-09 10:30:11,614] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:11,624] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/withdraw HTTP/1.1" 200 None
+[2022-06-09 10:30:11,744] [root] [INFO] [line:111]: 用例[提现失败--用户id为非数字]执行成功
+[2022-06-09 10:30:11,754] [root] [INFO] [line:112]: 实际运行结果是{'code': 2, 'msg': '数值参数格式不正确', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:11,754] [root] [INFO] [line:36]: ********************开始执行新增项目接口测试用例********************
+[2022-06-09 10:30:11,754] [root] [INFO] [line:41]: 开始执行注册用例，用例参数为{'mobile_phone': '18591031193', 'pwd': '123456789', 'type': 0, 'reg_name': 'hyean_ad'}
+[2022-06-09 10:30:11,754] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:11,804] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/register HTTP/1.1" 200 None
+[2022-06-09 10:30:11,814] [root] [INFO] [line:43]: 注册用例执行成功，用户注册结果返回：{'code': 0, 'msg': 'OK', 'data': {'id': 324352, 'reg_name': 'hyean_ad', 'mobile_phone': '18591031193'}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:11,814] [root] [INFO] [line:52]: 开始执行登录用例，用例参数为{'mobile_phone': '18591031193', 'pwd': '123456789'}
+[2022-06-09 10:30:11,824] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:11,874] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/login HTTP/1.1" 200 None
+[2022-06-09 10:30:11,884] [root] [INFO] [line:54]: 登录用例执行成功，用户登录结果返回：{'code': 0, 'msg': 'OK', 'data': {'id': 324352, 'leave_amount': 0.0, 'mobile_phone': '18591031193', 'reg_name': 'hyean_ad', 'reg_time': '2022-06-09 10:30:11.0', 'type': 0, 'token_info': {'token_type': 'Bearer', 'expires_in': '2022-06-09 10:35:11', 'token': 'eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjMyNDM1MiwiZXhwIjoxNjU0NzQyMTExfQ.RvgsJ4OaYjvELm_VE3p-9TiQQTL51H3FTGNmx_WJDvmfbMBnnIDY2s192M1ceaNghM0Q0nO7sI4n6dj-sJFoew'}}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:11,884] [root] [INFO] [line:61]: 登录执行成功，可用于鉴权的token值为 Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjMyNDM1MiwiZXhwIjoxNjU0NzQyMTExfQ.RvgsJ4OaYjvELm_VE3p-9TiQQTL51H3FTGNmx_WJDvmfbMBnnIDY2s192M1ceaNghM0Q0nO7sI4n6dj-sJFoew
+[2022-06-09 10:30:11,884] [root] [INFO] [line:75]: 开始执行用例[新增项目成功--借款期限类型为月]，用例参数为:{'member_id': 324352, 'title': 'test-001', 'amount': 20000.0, 'loan_rate': 10, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5}
+[2022-06-09 10:30:11,894] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:11,924] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/loan/add HTTP/1.1" 200 None
+[2022-06-09 10:30:12,023] [root] [INFO] [line:90]: 用例[新增项目成功--借款期限类型为月]执行成功
+[2022-06-09 10:30:12,023] [root] [INFO] [line:91]: 实际运行结果是{'code': 0, 'msg': 'OK', 'data': {'id': 13052, 'member_id': 324352, 'title': 'test-001', 'amount': 20000.0, 'loan_rate': 10.0, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2022-06-09 10:30:11.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:12,023] [root] [INFO] [line:75]: 开始执行用例[新增项目成功--借款期限类型为天]，用例参数为:{'member_id': 324352, 'title': 'test-001', 'amount': 20000.0, 'loan_rate': 10, 'loan_term': 30, 'loan_date_type': 2, 'bidding_days': 1}
+[2022-06-09 10:30:12,034] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:12,054] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/loan/add HTTP/1.1" 200 None
+[2022-06-09 10:30:12,137] [root] [INFO] [line:90]: 用例[新增项目成功--借款期限类型为天]执行成功
+[2022-06-09 10:30:12,137] [root] [INFO] [line:91]: 实际运行结果是{'code': 0, 'msg': 'OK', 'data': {'id': 13053, 'member_id': 324352, 'title': 'test-001', 'amount': 20000.0, 'loan_rate': 10.0, 'loan_term': 30, 'loan_date_type': 2, 'bidding_days': 5, 'create_time': '2022-06-09 10:30:11.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:12,137] [root] [INFO] [line:75]: 开始执行用例[新增项目成功--借款期限为1个月]，用例参数为:{'member_id': 324352, 'title': 'test-001', 'amount': 20000.0, 'loan_rate': 10, 'loan_term': 1, 'loan_date_type': 1, 'bidding_days': 1}
+[2022-06-09 10:30:12,137] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:12,164] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/loan/add HTTP/1.1" 200 None
+[2022-06-09 10:30:12,244] [root] [INFO] [line:90]: 用例[新增项目成功--借款期限为1个月]执行成功
+[2022-06-09 10:30:12,244] [root] [INFO] [line:91]: 实际运行结果是{'code': 0, 'msg': 'OK', 'data': {'id': 13054, 'member_id': 324352, 'title': 'test-001', 'amount': 20000.0, 'loan_rate': 10.0, 'loan_term': 1, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2022-06-09 10:30:11.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:12,244] [root] [INFO] [line:75]: 开始执行用例[新增项目成功--借款期限为36个月]，用例参数为:{'member_id': 324352, 'title': 'test-001', 'amount': 20000.0, 'loan_rate': 10, 'loan_term': 36, 'loan_date_type': 1, 'bidding_days': 1}
+[2022-06-09 10:30:12,244] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:12,268] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/loan/add HTTP/1.1" 200 None
+[2022-06-09 10:30:12,344] [root] [INFO] [line:90]: 用例[新增项目成功--借款期限为36个月]执行成功
+[2022-06-09 10:30:12,344] [root] [INFO] [line:91]: 实际运行结果是{'code': 0, 'msg': 'OK', 'data': {'id': 13055, 'member_id': 324352, 'title': 'test-001', 'amount': 20000.0, 'loan_rate': 10.0, 'loan_term': 36, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2022-06-09 10:30:11.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:12,344] [root] [INFO] [line:75]: 开始执行用例[新增项目成功--借款期限为10天]，用例参数为:{'member_id': 324352, 'title': 'test-001', 'amount': 20000.0, 'loan_rate': 10, 'loan_term': 10, 'loan_date_type': 2, 'bidding_days': 1}
+[2022-06-09 10:30:12,353] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:12,374] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/loan/add HTTP/1.1" 200 None
+[2022-06-09 10:30:12,454] [root] [INFO] [line:90]: 用例[新增项目成功--借款期限为10天]执行成功
+[2022-06-09 10:30:12,454] [root] [INFO] [line:91]: 实际运行结果是{'code': 0, 'msg': 'OK', 'data': {'id': 13056, 'member_id': 324352, 'title': 'test-001', 'amount': 20000.0, 'loan_rate': 10.0, 'loan_term': 10, 'loan_date_type': 2, 'bidding_days': 5, 'create_time': '2022-06-09 10:30:12.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:12,454] [root] [INFO] [line:75]: 开始执行用例[新增项目成功--借款期限为45天]，用例参数为:{'member_id': 324352, 'title': 'test-001', 'amount': 20000.0, 'loan_rate': 10, 'loan_term': 45, 'loan_date_type': 2, 'bidding_days': 1}
+[2022-06-09 10:30:12,454] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:12,484] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/loan/add HTTP/1.1" 200 None
+[2022-06-09 10:30:12,584] [root] [INFO] [line:90]: 用例[新增项目成功--借款期限为45天]执行成功
+[2022-06-09 10:30:12,584] [root] [INFO] [line:91]: 实际运行结果是{'code': 0, 'msg': 'OK', 'data': {'id': 13057, 'member_id': 324352, 'title': 'test-001', 'amount': 20000.0, 'loan_rate': 10.0, 'loan_term': 45, 'loan_date_type': 2, 'bidding_days': 5, 'create_time': '2022-06-09 10:30:12.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:12,584] [root] [INFO] [line:75]: 开始执行用例[新增项目成功--竞标天数为1天]，用例参数为:{'member_id': 324352, 'title': 'test-001', 'amount': 20000.0, 'loan_rate': 10, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 1}
+[2022-06-09 10:30:12,584] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:12,614] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/loan/add HTTP/1.1" 200 None
+[2022-06-09 10:30:12,694] [root] [INFO] [line:90]: 用例[新增项目成功--竞标天数为1天]执行成功
+[2022-06-09 10:30:12,694] [root] [INFO] [line:91]: 实际运行结果是{'code': 0, 'msg': 'OK', 'data': {'id': 13058, 'member_id': 324352, 'title': 'test-001', 'amount': 20000.0, 'loan_rate': 10.0, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2022-06-09 10:30:12.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:12,694] [root] [INFO] [line:75]: 开始执行用例[新增项目成功--竞标天数为10天]，用例参数为:{'member_id': 324352, 'title': 'test-001', 'amount': 20000.0, 'loan_rate': 10, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 10}
+[2022-06-09 10:30:12,694] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:12,714] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/loan/add HTTP/1.1" 200 None
+[2022-06-09 10:30:12,803] [root] [INFO] [line:90]: 用例[新增项目成功--竞标天数为10天]执行成功
+[2022-06-09 10:30:12,806] [root] [INFO] [line:91]: 实际运行结果是{'code': 0, 'msg': 'OK', 'data': {'id': 13059, 'member_id': 324352, 'title': 'test-001', 'amount': 20000.0, 'loan_rate': 10.0, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2022-06-09 10:30:12.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:12,806] [root] [INFO] [line:75]: 开始执行用例[新增项目失败--借款期限为0个月]，用例参数为:{'member_id': 324352, 'title': 'test-001', 'amount': 20000.0, 'loan_rate': 10, 'loan_term': 0, 'loan_date_type': 1, 'bidding_days': 1}
+[2022-06-09 10:30:12,808] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:12,823] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/loan/add HTTP/1.1" 200 None
+[2022-06-09 10:30:12,904] [root] [INFO] [line:90]: 用例[新增项目失败--借款期限为0个月]执行成功
+[2022-06-09 10:30:12,904] [root] [INFO] [line:91]: 实际运行结果是{'code': 2, 'msg': '借款期限单位为月的项目,期限范围为1到36个月(包含1个月和36个月)', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:12,904] [root] [INFO] [line:75]: 开始执行用例[新增项目失败--借款期限大于36个月]，用例参数为:{'member_id': 324352, 'title': 'test-001', 'amount': 20000.0, 'loan_rate': 10, 'loan_term': 37, 'loan_date_type': 1, 'bidding_days': 1}
+[2022-06-09 10:30:12,904] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:12,924] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/loan/add HTTP/1.1" 200 None
+[2022-06-09 10:30:13,014] [root] [INFO] [line:90]: 用例[新增项目失败--借款期限大于36个月]执行成功
+[2022-06-09 10:30:13,014] [root] [INFO] [line:91]: 实际运行结果是{'code': 2, 'msg': '借款期限单位为月的项目,期限范围为1到36个月(包含1个月和36个月)', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:13,014] [root] [INFO] [line:75]: 开始执行用例[新增项目失败--借款期限小于10天]，用例参数为:{'member_id': 324352, 'title': 'test-001', 'amount': 20000.0, 'loan_rate': 10, 'loan_term': 9, 'loan_date_type': 2, 'bidding_days': 1}
+[2022-06-09 10:30:13,014] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:13,034] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/loan/add HTTP/1.1" 200 None
+[2022-06-09 10:30:13,113] [root] [INFO] [line:90]: 用例[新增项目失败--借款期限小于10天]执行成功
+[2022-06-09 10:30:13,113] [root] [INFO] [line:91]: 实际运行结果是{'code': 2, 'msg': '借款期限单位为天的项目,期限范围为10到45天(包含10天和45天)', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:13,113] [root] [INFO] [line:75]: 开始执行用例[新增项目失败--借款期限大于45天]，用例参数为:{'member_id': 324352, 'title': 'test-001', 'amount': 20000.0, 'loan_rate': 10, 'loan_term': 46, 'loan_date_type': 2, 'bidding_days': 1}
+[2022-06-09 10:30:13,113] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:13,138] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/loan/add HTTP/1.1" 200 None
+[2022-06-09 10:30:13,244] [root] [INFO] [line:90]: 用例[新增项目失败--借款期限大于45天]执行成功
+[2022-06-09 10:30:13,244] [root] [INFO] [line:91]: 实际运行结果是{'code': 2, 'msg': '借款期限单位为天的项目,期限范围为10到45天(包含10天和45天)', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:13,244] [root] [INFO] [line:75]: 开始执行用例[新增项目失败--竞标天数为0天]，用例参数为:{'member_id': 324352, 'title': 'test-001', 'amount': 20000.0, 'loan_rate': 10, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 0}
+[2022-06-09 10:30:13,244] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:13,265] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/loan/add HTTP/1.1" 200 None
+[2022-06-09 10:30:13,385] [root] [INFO] [line:90]: 用例[新增项目失败--竞标天数为0天]执行成功
+[2022-06-09 10:30:13,385] [root] [INFO] [line:91]: 实际运行结果是{'code': 2, 'msg': '竞标期限为1-10天', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:13,385] [root] [INFO] [line:75]: 开始执行用例[新增项目失败--竞标天数为11天]，用例参数为:{'member_id': 324352, 'title': 'test-001', 'amount': 20000.0, 'loan_rate': 10, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 11}
+[2022-06-09 10:30:13,385] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:13,404] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/loan/add HTTP/1.1" 200 None
+[2022-06-09 10:30:13,508] [root] [INFO] [line:90]: 用例[新增项目失败--竞标天数为11天]执行成功
+[2022-06-09 10:30:13,508] [root] [INFO] [line:91]: 实际运行结果是{'code': 2, 'msg': '竞标期限为1-10天', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:13,508] [root] [INFO] [line:75]: 开始执行用例[新增项目失败--用户ID为空]，用例参数为:{'member_id': None, 'title': 'test-001', 'amount': 20000.0, 'loan_rate': 10, 'loan_term': 45, 'loan_date_type': 2, 'bidding_days': 1}
+[2022-06-09 10:30:13,508] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:13,524] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/loan/add HTTP/1.1" 200 None
+[2022-06-09 10:30:13,614] [root] [INFO] [line:90]: 用例[新增项目失败--用户ID为空]执行成功
+[2022-06-09 10:30:13,614] [root] [INFO] [line:91]: 实际运行结果是{'code': 1, 'msg': '用户id为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:13,614] [root] [INFO] [line:75]: 开始执行用例[新增项目失败--项目标题为空]，用例参数为:{'member_id': 324352, 'title': None, 'amount': 20000.0, 'loan_rate': 10, 'loan_term': 45, 'loan_date_type': 2, 'bidding_days': 1}
+[2022-06-09 10:30:13,614] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:13,634] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/loan/add HTTP/1.1" 200 None
+[2022-06-09 10:30:13,734] [root] [INFO] [line:90]: 用例[新增项目失败--项目标题为空]执行成功
+[2022-06-09 10:30:13,734] [root] [INFO] [line:91]: 实际运行结果是{'code': 1, 'msg': '标题为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:13,739] [root] [INFO] [line:75]: 开始执行用例[新增项目失败--借款金额为空]，用例参数为:{'member_id': 324352, 'title': 'test-001', 'amount': None, 'loan_rate': 10, 'loan_term': 45, 'loan_date_type': 2, 'bidding_days': 1}
+[2022-06-09 10:30:13,739] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:13,754] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/loan/add HTTP/1.1" 200 None
+[2022-06-09 10:30:13,854] [root] [INFO] [line:90]: 用例[新增项目失败--借款金额为空]执行成功
+[2022-06-09 10:30:13,854] [root] [INFO] [line:91]: 实际运行结果是{'code': 1, 'msg': '借款金额为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:13,854] [root] [INFO] [line:75]: 开始执行用例[新增项目失败--年利率为空]，用例参数为:{'member_id': 324352, 'title': 'test-001', 'amount': 20000.0, 'loan_rate': None, 'loan_term': 45, 'loan_date_type': 2, 'bidding_days': 1}
+[2022-06-09 10:30:13,854] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:13,874] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/loan/add HTTP/1.1" 200 None
+[2022-06-09 10:30:13,983] [root] [INFO] [line:90]: 用例[新增项目失败--年利率为空]执行成功
+[2022-06-09 10:30:13,983] [root] [INFO] [line:91]: 实际运行结果是{'code': 1, 'msg': '利率为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:13,983] [root] [INFO] [line:75]: 开始执行用例[新增项目失败--借款期限为空]，用例参数为:{'member_id': 324352, 'title': 'test-001', 'amount': 20000.0, 'loan_rate': 10, 'loan_term': None, 'loan_date_type': 2, 'bidding_days': 1}
+[2022-06-09 10:30:13,983] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:14,004] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/loan/add HTTP/1.1" 200 None
+[2022-06-09 10:30:14,093] [root] [INFO] [line:90]: 用例[新增项目失败--借款期限为空]执行成功
+[2022-06-09 10:30:14,093] [root] [INFO] [line:91]: 实际运行结果是{'code': 1, 'msg': '借款期限为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:14,093] [root] [INFO] [line:75]: 开始执行用例[新增项目失败--借款期限类型为空]，用例参数为:{'member_id': 324352, 'title': 'test-001', 'amount': 20000.0, 'loan_rate': 10, 'loan_term': 45, 'loan_date_type': None, 'bidding_days': 1}
+[2022-06-09 10:30:14,093] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:14,114] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/loan/add HTTP/1.1" 200 None
+[2022-06-09 10:30:14,194] [root] [INFO] [line:90]: 用例[新增项目失败--借款期限类型为空]执行成功
+[2022-06-09 10:30:14,194] [root] [INFO] [line:91]: 实际运行结果是{'code': 1, 'msg': '借款日期类型为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:14,197] [root] [INFO] [line:75]: 开始执行用例[新增项目失败--竞标天数为空]，用例参数为:{'member_id': 324352, 'title': 'test-001', 'amount': 20000.0, 'loan_rate': 10, 'loan_term': 45, 'loan_date_type': 2, 'bidding_days': None}
+[2022-06-09 10:30:14,198] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:14,214] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/loan/add HTTP/1.1" 200 None
+[2022-06-09 10:30:14,294] [root] [INFO] [line:90]: 用例[新增项目失败--竞标天数为空]执行成功
+[2022-06-09 10:30:14,294] [root] [INFO] [line:91]: 实际运行结果是{'code': 1, 'msg': '竞标期限为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:14,294] [root] [INFO] [line:36]: ********************开始执行审核项目接口测试用例********************
+[2022-06-09 10:30:14,294] [root] [INFO] [line:42]: 开始执行注册用例
+管理员权限用户的用例参数为:{'mobile_phone': '18532252605', 'pwd': '123456789', 'type': 0, 'reg_name': 'hyean_ad'}
+普通用户的用例参数为{'mobile_phone': '18583233872', 'pwd': '123456789', 'type': 1, 'reg_name': 'hyean_com'}
+[2022-06-09 10:30:14,303] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:14,354] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/register HTTP/1.1" 200 None
+[2022-06-09 10:30:14,354] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:14,424] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/register HTTP/1.1" 200 None
+[2022-06-09 10:30:14,424] [root] [INFO] [line:48]: 注册用例执行成功
+管理员权限用户注册结果：{'code': 0, 'msg': 'OK', 'data': {'id': 324353, 'reg_name': 'hyean_ad', 'mobile_phone': '18532252605'}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+普通用户注册结果：{'code': 0, 'msg': 'OK', 'data': {'id': 324354, 'reg_name': 'hyean_com', 'mobile_phone': '18583233872'}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:14,424] [root] [INFO] [line:61]: 开始执行管理员权限用户登录，用例参数为{'mobile_phone': '18532252605', 'pwd': '123456789'}
+[2022-06-09 10:30:14,434] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:14,494] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/login HTTP/1.1" 200 None
+[2022-06-09 10:30:14,494] [root] [INFO] [line:63]: 管理员权限用户登录成功，用户登录结果返回：{'code': 0, 'msg': 'OK', 'data': {'id': 324353, 'leave_amount': 0.0, 'mobile_phone': '18532252605', 'reg_name': 'hyean_ad', 'reg_time': '2022-06-09 10:30:14.0', 'type': 0, 'token_info': {'token_type': 'Bearer', 'expires_in': '2022-06-09 10:35:14', 'token': 'eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjMyNDM1MywiZXhwIjoxNjU0NzQyMTE0fQ.PjPfTkE_k1tNUpvq7YFvBl8lPok1hHz908Hf239bbcmZ0gvGGWTRAb64ks3CeaEkN61eNeUVuBE1A-EJj8DOLw'}}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:14,494] [root] [INFO] [line:64]: 开始执行普通会员权限用户登录，用例参数为{'mobile_phone': '18583233872', 'pwd': '123456789'}
+[2022-06-09 10:30:14,494] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:14,544] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/login HTTP/1.1" 200 None
+[2022-06-09 10:30:14,544] [root] [INFO] [line:66]: 普通会员用户登录成功，用户登录结果返回：{'code': 0, 'msg': 'OK', 'data': {'id': 324354, 'leave_amount': 0.0, 'mobile_phone': '18583233872', 'reg_name': 'hyean_com', 'reg_time': '2022-06-09 10:30:14.0', 'type': 1, 'token_info': {'token_type': 'Bearer', 'expires_in': '2022-06-09 10:35:14', 'token': 'eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjMyNDM1NCwiZXhwIjoxNjU0NzQyMTE0fQ.2PJctkIqYQq4nEacj7wJ1jm34zEN9a8uzSYtyWxlx7Gqr8ObqykLPM3evDBrlJp_aMFipCSYS2obj6fDmzxL9w'}}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:14,544] [root] [INFO] [line:73]: 管理员权限登录的用户，用于鉴权的token值为 Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjMyNDM1MywiZXhwIjoxNjU0NzQyMTE0fQ.PjPfTkE_k1tNUpvq7YFvBl8lPok1hHz908Hf239bbcmZ0gvGGWTRAb64ks3CeaEkN61eNeUVuBE1A-EJj8DOLw
+[2022-06-09 10:30:14,544] [root] [INFO] [line:78]: 普通会员权限登录的用户，用于鉴权的token值为 Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjMyNDM1NCwiZXhwIjoxNjU0NzQyMTE0fQ.2PJctkIqYQq4nEacj7wJ1jm34zEN9a8uzSYtyWxlx7Gqr8ObqykLPM3evDBrlJp_aMFipCSYS2obj6fDmzxL9w
+[2022-06-09 10:30:14,554] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:14,574] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/loan/add HTTP/1.1" 200 None
+[2022-06-09 10:30:14,574] [root] [INFO] [line:100]: 新创建的需要审核的项目id为 13060
+[2022-06-09 10:30:14,574] [root] [INFO] [line:121]: 开始执行用例[审核成功--项目通过]，用例参数为:{'loan_id': 13060, 'approved_or_not': True}
+[2022-06-09 10:30:14,574] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:14,594] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "PATCH /futureloan/loan/audit HTTP/1.1" 200 None
+[2022-06-09 10:30:14,684] [root] [INFO] [line:136]: 用例[审核成功--项目通过]执行成功
+[2022-06-09 10:30:14,684] [root] [INFO] [line:137]: 实际运行结果是{'code': 0, 'msg': 'OK', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:14,684] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:14,704] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/loan/add HTTP/1.1" 200 None
+[2022-06-09 10:30:14,704] [root] [INFO] [line:100]: 新创建的需要审核的项目id为 13061
+[2022-06-09 10:30:14,704] [root] [INFO] [line:121]: 开始执行用例[审核成功--项目不通过]，用例参数为:{'loan_id': 13061, 'approved_or_not': False}
+[2022-06-09 10:30:14,713] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:14,734] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "PATCH /futureloan/loan/audit HTTP/1.1" 200 None
+[2022-06-09 10:30:14,824] [root] [INFO] [line:136]: 用例[审核成功--项目不通过]执行成功
+[2022-06-09 10:30:14,824] [root] [INFO] [line:137]: 实际运行结果是{'code': 0, 'msg': 'OK', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:14,824] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:14,844] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/loan/add HTTP/1.1" 200 None
+[2022-06-09 10:30:14,844] [root] [INFO] [line:100]: 新创建的需要审核的项目id为 13062
+[2022-06-09 10:30:14,844] [root] [INFO] [line:121]: 开始执行用例[审核失败--项目id为空]，用例参数为:{'loan_id': None, 'approved_or_not': True}
+[2022-06-09 10:30:14,844] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:14,864] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "PATCH /futureloan/loan/audit HTTP/1.1" 200 None
+[2022-06-09 10:30:14,953] [root] [INFO] [line:136]: 用例[审核失败--项目id为空]执行成功
+[2022-06-09 10:30:14,953] [root] [INFO] [line:137]: 实际运行结果是{'code': 1, 'msg': '项目id为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:14,953] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:14,974] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/loan/add HTTP/1.1" 200 None
+[2022-06-09 10:30:14,974] [root] [INFO] [line:100]: 新创建的需要审核的项目id为 13063
+[2022-06-09 10:30:14,974] [root] [INFO] [line:121]: 开始执行用例[审核失败--项目id已经审核过]，用例参数为:{'loan_id': 39057, 'approved_or_not': True}
+[2022-06-09 10:30:14,974] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:14,994] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "PATCH /futureloan/loan/audit HTTP/1.1" 200 None
+[2022-06-09 10:30:15,083] [root] [INFO] [line:130]: 用例[审核失败--项目id已经审核过]执行失败
+[2022-06-09 10:30:15,090] [root] [INFO] [line:131]: 预期结果——>{'code': 2, 'msg': '项目不在审核中状态'}
+[2022-06-09 10:30:15,090] [root] [INFO] [line:132]: 实际结果——>{'code': 2, 'msg': '项目不存在', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:15,092] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:15,114] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/loan/add HTTP/1.1" 200 None
+[2022-06-09 10:30:15,114] [root] [INFO] [line:100]: 新创建的需要审核的项目id为 13064
+[2022-06-09 10:30:15,114] [root] [INFO] [line:121]: 开始执行用例[审核失败--审核状态为空]，用例参数为:{'loan_id': 13064, 'approved_or_not': None}
+[2022-06-09 10:30:15,114] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:15,134] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "PATCH /futureloan/loan/audit HTTP/1.1" 200 None
+[2022-06-09 10:30:15,213] [root] [INFO] [line:136]: 用例[审核失败--审核状态为空]执行成功
+[2022-06-09 10:30:15,213] [root] [INFO] [line:137]: 实际运行结果是{'code': 1, 'msg': 'approved_or_not为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:15,213] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:15,244] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/loan/add HTTP/1.1" 200 None
+[2022-06-09 10:30:15,244] [root] [INFO] [line:100]: 新创建的需要审核的项目id为 13065
+[2022-06-09 10:30:15,244] [root] [INFO] [line:121]: 开始执行用例[审核失败--审核状态不是布尔值]，用例参数为:{'loan_id': 13065, 'approved_or_not': 1}
+[2022-06-09 10:30:15,244] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:15,264] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "PATCH /futureloan/loan/audit HTTP/1.1" 200 None
+[2022-06-09 10:30:15,344] [root] [INFO] [line:130]: 用例[审核失败--审核状态不是布尔值]执行失败
+[2022-06-09 10:30:15,354] [root] [INFO] [line:131]: 预期结果——>{'code': 2, 'msg': 'approved_or_not只能为true或者false'}
+[2022-06-09 10:30:15,354] [root] [INFO] [line:132]: 实际结果——>{'code': 1, 'msg': 'approved_or_not只能为true或者false', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:15,354] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:15,374] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/loan/add HTTP/1.1" 200 None
+[2022-06-09 10:30:15,374] [root] [INFO] [line:100]: 新创建的需要审核的项目id为 13066
+[2022-06-09 10:30:15,374] [root] [INFO] [line:121]: 开始执行用例[审核失败--审核用户无审核权限]，用例参数为:{'loan_id': 13066, 'approved_or_not': True}
+[2022-06-09 10:30:15,384] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:15,395] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "PATCH /futureloan/loan/audit HTTP/1.1" 200 None
+[2022-06-09 10:30:15,484] [root] [INFO] [line:136]: 用例[审核失败--审核用户无审核权限]执行成功
+[2022-06-09 10:30:15,484] [root] [INFO] [line:137]: 实际运行结果是{'code': 2, 'msg': '普通会员不能审核项目，请使用管理员账号', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:15,484] [root] [INFO] [line:36]: ********************开始执行投资接口测试用例********************
+[2022-06-09 10:30:15,484] [root] [INFO] [line:41]: 开始执行注册用例
+管理员权限用户的用例参数为:{'mobile_phone': '18579221534', 'pwd': '123456789', 'type': 0, 'reg_name': 'hyean_ad'}
+[2022-06-09 10:30:15,484] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:15,554] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/register HTTP/1.1" 200 None
+[2022-06-09 10:30:15,554] [root] [INFO] [line:43]: 注册用例执行成功，管理员权限用户注册结果：{'code': 0, 'msg': 'OK', 'data': {'id': 324355, 'reg_name': 'hyean_ad', 'mobile_phone': '18579221534'}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:15,554] [root] [INFO] [line:52]: 开始执行管理员权限用户登录，用例参数为{'mobile_phone': '18579221534', 'pwd': '123456789'}
+[2022-06-09 10:30:15,554] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:15,614] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/login HTTP/1.1" 200 None
+[2022-06-09 10:30:15,614] [root] [INFO] [line:54]: 管理员权限用户登录成功，用户登录结果返回：{'code': 0, 'msg': 'OK', 'data': {'id': 324355, 'leave_amount': 0.0, 'mobile_phone': '18579221534', 'reg_name': 'hyean_ad', 'reg_time': '2022-06-09 10:30:15.0', 'type': 0, 'token_info': {'token_type': 'Bearer', 'expires_in': '2022-06-09 10:35:15', 'token': 'eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjMyNDM1NSwiZXhwIjoxNjU0NzQyMTE1fQ.oV_boXCGYLDA3VD1RIjvyrMwobmJVnoU_KUcIFPy24rpL_WLqBFD5wc5nMbmnNASW7_5omJ8-Zo__FWb3Ivqaw'}}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:15,614] [root] [INFO] [line:61]: 管理员权限登录的用户，用于鉴权的token值为 Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjMyNDM1NSwiZXhwIjoxNjU0NzQyMTE1fQ.oV_boXCGYLDA3VD1RIjvyrMwobmJVnoU_KUcIFPy24rpL_WLqBFD5wc5nMbmnNASW7_5omJ8-Zo__FWb3Ivqaw
+[2022-06-09 10:30:15,614] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:15,641] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/loan/add HTTP/1.1" 200 None
+[2022-06-09 10:30:15,641] [root] [INFO] [line:80]: 新创建的需要审核的项目id为 13067
+[2022-06-09 10:30:15,644] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:15,664] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/loan/add HTTP/1.1" 200 None
+[2022-06-09 10:30:15,664] [root] [INFO] [line:84]: 新创建的不需要审核的项目id为 13068
+[2022-06-09 10:30:15,664] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:15,694] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "PATCH /futureloan/loan/audit HTTP/1.1" 200 None
+[2022-06-09 10:30:15,694] [root] [INFO] [line:93]: 项目审核的headers={'X-Lemonban-Media-Type': 'lemonban.v2', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjMyNDM1NSwiZXhwIjoxNjU0NzQyMTE1fQ.oV_boXCGYLDA3VD1RIjvyrMwobmJVnoU_KUcIFPy24rpL_WLqBFD5wc5nMbmnNASW7_5omJ8-Zo__FWb3Ivqaw', 'Content-Type': 'application/json'}
+[2022-06-09 10:30:15,694] [root] [INFO] [line:94]: 项目审核的data={'loan_id': '13067', 'approved_or_not': True}
+[2022-06-09 10:30:15,694] [root] [INFO] [line:95]: 项目 13067审核结果为：{'code': 0, 'msg': 'OK', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:15,694] [root] [INFO] [line:121]: 开始执行用例[投资成功]，用例参数为:{'member_id': 324355, 'loan_id': 13067, 'amount': '200'}
+[2022-06-09 10:30:15,694] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:15,724] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/invest HTTP/1.1" 200 None
+[2022-06-09 10:30:15,854] [root] [INFO] [line:136]: 用例[投资成功]执行成功
+[2022-06-09 10:30:15,854] [root] [INFO] [line:137]: 实际运行结果是{'code': 0, 'msg': 'OK', 'data': {'id': 3008, 'member_id': 324355, 'loan_id': 13067, 'amount': 200.0, 'create_time': '2022-06-09 10:30:15', 'is_valid': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:15,854] [root] [INFO] [line:121]: 开始执行用例[投资失败--会员id为空]，用例参数为:{'member_id': None, 'loan_id': 13067, 'amount': '200'}
+[2022-06-09 10:30:15,854] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:15,873] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/invest HTTP/1.1" 200 None
+[2022-06-09 10:30:15,953] [root] [INFO] [line:136]: 用例[投资失败--会员id为空]执行成功
+[2022-06-09 10:30:15,953] [root] [INFO] [line:137]: 实际运行结果是{'code': 1, 'msg': '会员id为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:15,953] [root] [INFO] [line:121]: 开始执行用例[投资失败--会员id不存在]，用例参数为:{'member_id': 1222324355, 'loan_id': 13067, 'amount': '200'}
+[2022-06-09 10:30:15,964] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:15,983] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/invest HTTP/1.1" 200 None
+[2022-06-09 10:30:16,064] [root] [INFO] [line:136]: 用例[投资失败--会员id不存在]执行成功
+[2022-06-09 10:30:16,064] [root] [INFO] [line:137]: 实际运行结果是{'code': 2, 'msg': '会员不存在', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:16,064] [root] [INFO] [line:121]: 开始执行用例[投资失败--标id为空]，用例参数为:{'member_id': 324355, 'loan_id': None, 'amount': '200'}
+[2022-06-09 10:30:16,064] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:16,085] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/invest HTTP/1.1" 200 None
+[2022-06-09 10:30:16,174] [root] [INFO] [line:136]: 用例[投资失败--标id为空]执行成功
+[2022-06-09 10:30:16,174] [root] [INFO] [line:137]: 实际运行结果是{'code': 1, 'msg': '项目id为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:16,174] [root] [INFO] [line:121]: 开始执行用例[投资失败--标id不存在]，用例参数为:{'member_id': 324355, 'loan_id': 1213067, 'amount': '200'}
+[2022-06-09 10:30:16,174] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:16,194] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/invest HTTP/1.1" 200 None
+[2022-06-09 10:30:16,273] [root] [INFO] [line:136]: 用例[投资失败--标id不存在]执行成功
+[2022-06-09 10:30:16,273] [root] [INFO] [line:137]: 实际运行结果是{'code': 2, 'msg': '项目不存在', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:16,283] [root] [INFO] [line:121]: 开始执行用例[投资失败--投资金额为空为空]，用例参数为:{'member_id': 324355, 'loan_id': 13067, 'amount': None}
+[2022-06-09 10:30:16,283] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:16,294] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/invest HTTP/1.1" 200 None
+[2022-06-09 10:30:16,385] [root] [INFO] [line:136]: 用例[投资失败--投资金额为空为空]执行成功
+[2022-06-09 10:30:16,385] [root] [INFO] [line:137]: 实际运行结果是{'code': 1, 'msg': '余额为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:16,385] [root] [INFO] [line:121]: 开始执行用例[投资失败--投资金额不能被100整除]，用例参数为:{'member_id': 324355, 'loan_id': 13067, 'amount': '2005'}
+[2022-06-09 10:30:16,385] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:16,404] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/invest HTTP/1.1" 200 None
+[2022-06-09 10:30:16,484] [root] [INFO] [line:136]: 用例[投资失败--投资金额不能被100整除]执行成功
+[2022-06-09 10:30:16,484] [root] [INFO] [line:137]: 实际运行结果是{'code': 2, 'msg': '充值金额必须大于100，并且可以被100整除', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:16,484] [root] [INFO] [line:121]: 开始执行用例[投资失败--投资金额小于0]，用例参数为:{'member_id': 324355, 'loan_id': 13067, 'amount': '-1200'}
+[2022-06-09 10:30:16,484] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:16,505] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/invest HTTP/1.1" 200 None
+[2022-06-09 10:30:16,593] [root] [INFO] [line:136]: 用例[投资失败--投资金额小于0]执行成功
+[2022-06-09 10:30:16,593] [root] [INFO] [line:137]: 实际运行结果是{'code': 2, 'msg': '充值金额必须大于100，并且可以被100整除', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:16,593] [root] [INFO] [line:121]: 开始执行用例[投资失败--投资金额大于剩余所需金额]，用例参数为:{'member_id': 324355, 'loan_id': 13067, 'amount': '20000000'}
+[2022-06-09 10:30:16,593] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:16,614] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/invest HTTP/1.1" 200 None
+[2022-06-09 10:30:16,703] [root] [INFO] [line:130]: 用例[投资失败--投资金额大于剩余所需金额]执行失败
+[2022-06-09 10:30:16,703] [root] [INFO] [line:131]: 预期结果——>{'code': 2, 'msg': '该标可投金额不足,可投金额：18000.0'}
+[2022-06-09 10:30:16,703] [root] [INFO] [line:132]: 实际结果——>{'code': 2, 'msg': '该标可投金额不足,可投金额：199800.0', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2022-06-09 10:30:16,703] [root] [INFO] [line:121]: 开始执行用例[投资失败--标状态不是【竞标中】]，用例参数为:{'member_id': 324355, 'loan_id': 13068, 'amount': '900'}
+[2022-06-09 10:30:16,703] [urllib3.connectionpool] [DEBUG] [line:227]: Starting new HTTP connection (1): api.lemonban.com:80
+[2022-06-09 10:30:16,734] [urllib3.connectionpool] [DEBUG] [line:452]: http://api.lemonban.com:80 "POST /futureloan/member/invest HTTP/1.1" 200 None
+[2022-06-09 10:30:16,842] [root] [INFO] [line:136]: 用例[投资失败--标状态不是【竞标中】]执行成功
+[2022-06-09 10:30:16,844] [root] [INFO] [line:137]: 实际运行结果是{'code': 2, 'msg': '该项目不在竞标中状态', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}

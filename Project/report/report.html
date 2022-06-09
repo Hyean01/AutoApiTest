@@ -116,19 +116,19 @@ function html_escape(s) {
 <div class='heading'>
 <h1 style="font-family: Microsoft YaHei">unittest report</h1>
 <p class='attribute'><strong>测试人员 : </strong> hyean</p>
-<p class='attribute'><strong>开始时间 : </strong> 2020-10-28 16:43:37</p>
-<p class='attribute'><strong>合计耗时 : </strong> 0:00:13.468437</p>
-<p class='attribute'><strong>测试结果 : </strong> 共 83，通过 71，失败 10，错误 2，通过率= 85.54%</p>
+<p class='attribute'><strong>开始时间 : </strong> 2022-06-09 10:30:07</p>
+<p class='attribute'><strong>合计耗时 : </strong> 0:00:09.480104</p>
+<p class='attribute'><strong>测试结果 : </strong> 共 72，通过 62，失败 7，错误 3，通过率= 86.11%</p>
 
 <p class='description'>练习单元测试报告</p>
 </div>
 
 
 <p id='show_detail_line'>
-<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 85.54% }</a>
-<a class="btn btn-danger" href='javascript:showCase(1)'>失败{ 10 }</a>
-<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 71 }</a>
-<a class="btn btn-info" href='javascript:showCase(3)'>所有{ 83 }</a>
+<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 86.11% }</a>
+<a class="btn btn-danger" href='javascript:showCase(1)'>失败{ 7 }</a>
+<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 62 }</a>
+<a class="btn btn-info" href='javascript:showCase(3)'>所有{ 72 }</a>
 </p>
 <table id='result_table' class="table table-condensed table-bordered table-hover">
 <colgroup>
@@ -148,137 +148,51 @@ function html_escape(s) {
     <td>详细</td>
 </tr>
 
-<tr class='failClass warning'>
-    <td>test_01_register.RegisterTest</td>
-    <td class="text-center">12</td>
-    <td class="text-center">9</td>
-    <td class="text-center">3</td>
+<tr class='errorClass warning'>
+    <td>unittest.loader._FailedTest</td>
+    <td class="text-center">1</td>
     <td class="text-center">0</td>
-    <td class="text-center"><a href="javascript:showClassDetail('c1',12)" class="detail" id='c1'>详细</a></td>
+    <td class="text-center">0</td>
+    <td class="text-center">1</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c1',1)" class="detail" id='c1'>详细</a></td>
 </tr>
 
-<tr id='pt1_1' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_register_01: 注册成功--昵称不为空</div></td>
-    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
-</tr>
-
-<tr id='pt1_2' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_register_02: 注册成功--昵称为空</div></td>
-    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
-</tr>
-
-<tr id='pt1_3' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_register_03: 注册成功--类型位空</div></td>
-    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
-</tr>
-
-<tr id='pt1_4' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_register_04: 注册不成功--手机号为空</div></td>
-    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
-</tr>
-
-<tr id='pt1_5' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_register_05: 注册不成功--密码为空</div></td>
-    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
-</tr>
-
-<tr id='ft1_6' class='none'>
-    <td class='failCase'><div class='testcase'>test_register_06: 注册不成功--类型不是int</div></td>
+<tr id='ft1_1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_01_register</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
-    <button id='btn_ft1_6' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_6'>失败</button>
-    <div id='div_ft1_6' class="collapse">  -->
+    <button id='btn_ft1_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_1'>错误</button>
+    <div id='div_ft1_1' class="collapse">  -->
     <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_ft1_6' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_6'>失败</button>
-    <div id='div_ft1_6' class="collapse in" align="left">
+    <button id='btn_ft1_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_1'>错误</button>
+    <div id='div_ft1_1' class="collapse in" align="left">
     <pre>
     
-ft1_6: 用例[注册不成功--类型不是int]——&gt;预期结果是:{'code': 2, 'msg': '格式错误'}，
-实际结果是:{'code': 1004, 'msg': 'JSON parse error: Cannot deserialize value of type `java.lang.Integer` from String "we": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.lang.Integer` from String "we": not a valid Integer value\n at [Source: (PushbackInputStream); line: 1, column: 60] (through reference chain: com.lemon.pojo.Member["type"])', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+ft1_1: ImportError: Failed to import test module: test_01_register
 Traceback (most recent call last):
-  File "E:\Py24\Project\lib\ddt.py", line 145, in wrapper
-    return func(self, *args, **kwargs)
-  File "E:\Py24\Project\testcases\test_01_register.py", line 96, in test_register
-    raise e
-  File "E:\Py24\Project\testcases\test_01_register.py", line 74, in test_register
-    self.assertEqual(case_expected["code"], result.json()["code"])
-AssertionError: 2 != 1004
+  File "C:\Users\Hyean\AppData\Roaming\Python\Python39\site-packages\pymysql\connections.py", line 613, in connect
+    sock = socket.create_connection(
+  File "C:\Program Files\Python39\lib\socket.py", line 844, in create_connection
+    raise err
+  File "C:\Program Files\Python39\lib\socket.py", line 832, in create_connection
+    sock.connect(sa)
+socket.timeout: timed out
 
+During handling of the above exception, another exception occurred:
 
-    </pre>
-    </div>
-    </td>
-</tr>
-
-<tr id='pt1_7' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_register_07: 注册不成功--全为空</div></td>
-    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
-</tr>
-
-<tr id='pt1_8' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_register_08: 注册不成功--密码长度小于8位</div></td>
-    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
-</tr>
-
-<tr id='pt1_9' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_register_09: 注册不成功--密码长度大于16位</div></td>
-    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
-</tr>
-
-<tr id='pt1_10' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_register_10: 注册不成功--昵称大于10位</div></td>
-    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
-</tr>
-
-<tr id='ft1_11' class='none'>
-    <td class='failCase'><div class='testcase'>test_register_11: 注册不成功--用户已注册</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou
-    <button id='btn_ft1_11' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_11'>失败</button>
-    <div id='div_ft1_11' class="collapse">  -->
-    <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_ft1_11' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_11'>失败</button>
-    <div id='div_ft1_11' class="collapse in" align="left">
-    <pre>
-    
-ft1_11: 用例[注册不成功--用户已注册]——&gt;预期结果是:{'code': 2, 'msg': '账号已存在'}，
-实际结果是:{'code': 0, 'msg': 'OK', 'data': {'id': 202565, 'reg_name': 'hah', 'mobile_phone': '18543018728'}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
 Traceback (most recent call last):
-  File "E:\Py24\Project\lib\ddt.py", line 145, in wrapper
-    return func(self, *args, **kwargs)
-  File "E:\Py24\Project\testcases\test_01_register.py", line 96, in test_register
-    raise e
-  File "E:\Py24\Project\testcases\test_01_register.py", line 74, in test_register
-    self.assertEqual(case_expected["code"], result.json()["code"])
-AssertionError: 2 != 0
+  File "C:\Program Files\Python39\lib\unittest\loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Program Files\Python39\lib\unittest\loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "H:\AutoApiTest\Project\testcases\test_01_register.py", line 23, in &lt;module&gt;
+    con = pymysql.Connect(host=conf.get("db", "host"),
+  File "C:\Users\Hyean\AppData\Roaming\Python\Python39\site-packages\pymysql\connections.py", line 353, in __init__
+    self.connect()
+  File "C:\Users\Hyean\AppData\Roaming\Python\Python39\site-packages\pymysql\connections.py", line 664, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '120.78.128.25' (timed out)")
 
-
-    </pre>
-    </div>
-    </td>
-</tr>
-
-<tr id='ft1_12' class='none'>
-    <td class='failCase'><div class='testcase'>test_register_12: 注册不成功--手机号格式不对</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou
-    <button id='btn_ft1_12' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_12'>失败</button>
-    <div id='div_ft1_12' class="collapse">  -->
-    <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_ft1_12' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_12'>失败</button>
-    <div id='div_ft1_12' class="collapse in" align="left">
-    <pre>
-    
-ft1_12: 用例[注册不成功--手机号格式不对]——&gt;预期结果是:{'code': 2, 'msg': '无效的手机格式'}，
-实际结果是:{'code': 0, 'msg': 'OK', 'data': {'id': 202566, 'reg_name': 'hah', 'mobile_phone': '18593954450'}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
-Traceback (most recent call last):
-  File "E:\Py24\Project\lib\ddt.py", line 145, in wrapper
-    return func(self, *args, **kwargs)
-  File "E:\Py24\Project\testcases\test_01_register.py", line 96, in test_register
-    raise e
-  File "E:\Py24\Project\testcases\test_01_register.py", line 74, in test_register
-    self.assertEqual(case_expected["code"], result.json()["code"])
-AssertionError: 2 != 0
 
 
     </pre>
@@ -307,13 +221,13 @@ AssertionError: 2 != 0
     <pre>
     
 ft2_1: 用例[登录成功]——&gt;预期结果是:{'code': 0, 'msg': 'OK'}，
-实际结果是:{'code': 1001, 'msg': '账号信息错误', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+实际结果是:{'code': 1001, 'msg': '账号信息错误', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
 Traceback (most recent call last):
-  File "E:\Py24\Project\lib\ddt.py", line 145, in wrapper
+  File "H:\AutoApiTest\Project\lib\ddt.py", line 145, in wrapper
     return func(self, *args, **kwargs)
-  File "E:\Py24\Project\testcases\test_02_login.py", line 55, in test_login
+  File "H:\AutoApiTest\Project\testcases\test_02_login.py", line 55, in test_login
     raise e
-  File "E:\Py24\Project\testcases\test_02_login.py", line 47, in test_login
+  File "H:\AutoApiTest\Project\testcases\test_02_login.py", line 47, in test_login
     self.assertEqual(case_expected["code"], result.json()["code"])
 AssertionError: 0 != 1001
 
@@ -394,13 +308,13 @@ AssertionError: 0 != 1001
     <pre>
     
 ft3_5: 用例[充值失败--金额等于0]——&gt;预期结果是:{'code': 2, 'msg': '余额必须大于0并且小于或者等于500000'}，
-实际结果是:{'code': 0, 'msg': 'OK', 'data': {'id': 202567, 'leave_amount': 750000.17, 'mobile_phone': '18580944255', 'reg_name': 'hyean', 'reg_time': '2020-10-28 16:43:40.0', 'type': 0}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+实际结果是:{'code': 0, 'msg': 'OK', 'data': {'id': 324350, 'leave_amount': 750000.17, 'mobile_phone': '18542523864', 'reg_name': 'hyean', 'reg_time': '2022-06-09 10:30:07.0', 'type': 0}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
 Traceback (most recent call last):
-  File "E:\Py24\Project\lib\ddt.py", line 145, in wrapper
+  File "H:\AutoApiTest\Project\lib\ddt.py", line 145, in wrapper
     return func(self, *args, **kwargs)
-  File "E:\Py24\Project\testcases\test_03_recharge.py", line 102, in test_recharge
+  File "H:\AutoApiTest\Project\testcases\test_03_recharge.py", line 102, in test_recharge
     raise e
-  File "E:\Py24\Project\testcases\test_03_recharge.py", line 94, in test_recharge
+  File "H:\AutoApiTest\Project\testcases\test_03_recharge.py", line 94, in test_recharge
     self.assertEqual(case_expected["code"], result.json()["code"])
 AssertionError: 2 != 0
 
@@ -447,13 +361,13 @@ AssertionError: 2 != 0
     <pre>
     
 ft3_11: 用例[充值失败--充值金额为空]——&gt;预期结果是:{'code': 1, 'msg': '充值余额为空'}，
-实际结果是:{'code': 2, 'msg': '余额必须为数值型', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+实际结果是:{'code': 2, 'msg': '数字格式化异常', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
 Traceback (most recent call last):
-  File "E:\Py24\Project\lib\ddt.py", line 145, in wrapper
+  File "H:\AutoApiTest\Project\lib\ddt.py", line 145, in wrapper
     return func(self, *args, **kwargs)
-  File "E:\Py24\Project\testcases\test_03_recharge.py", line 102, in test_recharge
+  File "H:\AutoApiTest\Project\testcases\test_03_recharge.py", line 102, in test_recharge
     raise e
-  File "E:\Py24\Project\testcases\test_03_recharge.py", line 94, in test_recharge
+  File "H:\AutoApiTest\Project\testcases\test_03_recharge.py", line 94, in test_recharge
     self.assertEqual(case_expected["code"], result.json()["code"])
 AssertionError: 1 != 2
 
@@ -485,14 +399,14 @@ AssertionError: 1 != 2
     <pre>
     
 ft3_14: Traceback (most recent call last):
-  File "E:\Py24\Project\lib\ddt.py", line 145, in wrapper
+  File "H:\AutoApiTest\Project\lib\ddt.py", line 145, in wrapper
     return func(self, *args, **kwargs)
-  File "E:\Py24\Project\testcases\test_03_recharge.py", line 87, in test_recharge
+  File "H:\AutoApiTest\Project\testcases\test_03_recharge.py", line 87, in test_recharge
     raise e
-  File "E:\Py24\Project\testcases\test_03_recharge.py", line 81, in test_recharge
+  File "H:\AutoApiTest\Project\testcases\test_03_recharge.py", line 81, in test_recharge
     case_data = eval(case["data"])
   File "&lt;string&gt;", line 1
-    {"member_id":202567,"amount":5w}
+    {"member_id":324350,"amount":5w}
                                   ^
 SyntaxError: invalid syntax
 
@@ -505,8 +419,8 @@ SyntaxError: invalid syntax
 <tr class='errorClass warning'>
     <td>test_04_withdraw.WithdrawTest</td>
     <td class="text-center">12</td>
-    <td class="text-center">9</td>
-    <td class="text-center">2</td>
+    <td class="text-center">10</td>
+    <td class="text-center">1</td>
     <td class="text-center">1</td>
     <td class="text-center"><a href="javascript:showClassDetail('c4',12)" class="detail" id='c4'>详细</a></td>
 </tr>
@@ -523,13 +437,13 @@ SyntaxError: invalid syntax
     <pre>
     
 ft4_1: 用例[提现成功]——&gt;预期结果是:{'code': 0, 'msg': 'OK'}，
-实际结果是:{'code': 1002, 'msg': '余额不足', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+实际结果是:{'code': 1002, 'msg': '余额不足', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
 Traceback (most recent call last):
-  File "E:\Py24\Project\lib\ddt.py", line 145, in wrapper
+  File "H:\AutoApiTest\Project\lib\ddt.py", line 145, in wrapper
     return func(self, *args, **kwargs)
-  File "E:\Py24\Project\testcases\test_04_withdraw.py", line 108, in test_withdraw
+  File "H:\AutoApiTest\Project\testcases\test_04_withdraw.py", line 108, in test_withdraw
     raise e
-  File "E:\Py24\Project\testcases\test_04_withdraw.py", line 100, in test_withdraw
+  File "H:\AutoApiTest\Project\testcases\test_04_withdraw.py", line 100, in test_withdraw
     self.assertEqual(case_expected["code"], result.json()["code"])
 AssertionError: 0 != 1002
 
@@ -554,32 +468,9 @@ AssertionError: 0 != 1002
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
-<tr id='ft4_5' class='none'>
-    <td class='failCase'><div class='testcase'>test_withdraw_05: 提现失败--用户id不存在</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou
-    <button id='btn_ft4_5' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft4_5'>失败</button>
-    <div id='div_ft4_5' class="collapse">  -->
-    <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_ft4_5' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft4_5'>失败</button>
-    <div id='div_ft4_5' class="collapse in" align="left">
-    <pre>
-    
-ft4_5: 用例[提现失败--用户id不存在]——&gt;预期结果是:{'code': 2, 'msg': '会员不存在'}，
-实际结果是:{'code': 1002, 'msg': '余额不足', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
-Traceback (most recent call last):
-  File "E:\Py24\Project\lib\ddt.py", line 145, in wrapper
-    return func(self, *args, **kwargs)
-  File "E:\Py24\Project\testcases\test_04_withdraw.py", line 108, in test_withdraw
-    raise e
-  File "E:\Py24\Project\testcases\test_04_withdraw.py", line 100, in test_withdraw
-    self.assertEqual(case_expected["code"], result.json()["code"])
-AssertionError: 2 != 1002
-
-
-    </pre>
-    </div>
-    </td>
+<tr id='pt4_5' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_withdraw_05: 提现失败--用户id不存在</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
 <tr id='pt4_6' class='hiddenRow'>
@@ -619,14 +510,14 @@ AssertionError: 2 != 1002
     <pre>
     
 ft4_11: Traceback (most recent call last):
-  File "E:\Py24\Project\lib\ddt.py", line 145, in wrapper
+  File "H:\AutoApiTest\Project\lib\ddt.py", line 145, in wrapper
     return func(self, *args, **kwargs)
-  File "E:\Py24\Project\testcases\test_04_withdraw.py", line 92, in test_withdraw
+  File "H:\AutoApiTest\Project\testcases\test_04_withdraw.py", line 92, in test_withdraw
     raise e
-  File "E:\Py24\Project\testcases\test_04_withdraw.py", line 86, in test_withdraw
+  File "H:\AutoApiTest\Project\testcases\test_04_withdraw.py", line 86, in test_withdraw
     case_data = eval(case["data"])
   File "&lt;string&gt;", line 1
-    {"member_id":202568,"amount":50万}
+    {"member_id":324351,"amount":50万}
                                    ^
 SyntaxError: invalid syntax
 
@@ -758,8 +649,8 @@ SyntaxError: invalid syntax
 <tr class='failClass warning'>
     <td>test_06_audit.AuditTest</td>
     <td class="text-center">7</td>
-    <td class="text-center">6</td>
-    <td class="text-center">1</td>
+    <td class="text-center">5</td>
+    <td class="text-center">2</td>
     <td class="text-center">0</td>
     <td class="text-center"><a href="javascript:showClassDetail('c6',7)" class="detail" id='c6'>详细</a></td>
 </tr>
@@ -775,7 +666,7 @@ SyntaxError: invalid syntax
     <div id='div_pt6_1' class="collapse in" align="left">
     <pre>
     
-pt6_1: {'code': 0, 'msg': 'OK', 'data': {'id': 41946, 'member_id': 202570, 'title': 'test-001', 'amount': 200000.0, 'loan_rate': 10.0, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-10-28 16:43:47.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+pt6_1: {'code': 0, 'msg': 'OK', 'data': {'id': 13060, 'member_id': 324353, 'title': 'test-001', 'amount': 200000.0, 'loan_rate': 10.0, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2022-06-09 10:30:14.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
 
 
     </pre>
@@ -794,7 +685,7 @@ pt6_1: {'code': 0, 'msg': 'OK', 'data': {'id': 41946, 'member_id': 202570, 'titl
     <div id='div_pt6_2' class="collapse in" align="left">
     <pre>
     
-pt6_2: {'code': 0, 'msg': 'OK', 'data': {'id': 41947, 'member_id': 202570, 'title': 'test-001', 'amount': 200000.0, 'loan_rate': 10.0, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-10-28 16:43:47.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+pt6_2: {'code': 0, 'msg': 'OK', 'data': {'id': 13061, 'member_id': 324353, 'title': 'test-001', 'amount': 200000.0, 'loan_rate': 10.0, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2022-06-09 10:30:14.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
 
 
     </pre>
@@ -813,7 +704,7 @@ pt6_2: {'code': 0, 'msg': 'OK', 'data': {'id': 41947, 'member_id': 202570, 'titl
     <div id='div_pt6_3' class="collapse in" align="left">
     <pre>
     
-pt6_3: {'code': 0, 'msg': 'OK', 'data': {'id': 41948, 'member_id': 202570, 'title': 'test-001', 'amount': 200000.0, 'loan_rate': 10.0, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-10-28 16:43:47.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+pt6_3: {'code': 0, 'msg': 'OK', 'data': {'id': 13062, 'member_id': 324353, 'title': 'test-001', 'amount': 200000.0, 'loan_rate': 10.0, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2022-06-09 10:30:14.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
 
 
     </pre>
@@ -821,18 +712,31 @@ pt6_3: {'code': 0, 'msg': 'OK', 'data': {'id': 41948, 'member_id': 202570, 'titl
     </td>
 </tr>
 
-<tr id='pt6_4' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_audit_4: 审核失败--项目id已经审核过</div></td>
+<tr id='ft6_4' class='none'>
+    <td class='failCase'><div class='testcase'>test_audit_4: 审核失败--项目id已经审核过</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
-    <button id='btn_pt6_4' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt6_4'>通过</button>
-    <div id='div_pt6_4' class="collapse">  -->
+    <button id='btn_ft6_4' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft6_4'>失败</button>
+    <div id='div_ft6_4' class="collapse">  -->
     <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_pt6_4' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt6_4'>通过</button>
-    <div id='div_pt6_4' class="collapse in" align="left">
+    <button id='btn_ft6_4' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft6_4'>失败</button>
+    <div id='div_ft6_4' class="collapse in" align="left">
     <pre>
     
-pt6_4: {'code': 0, 'msg': 'OK', 'data': {'id': 41949, 'member_id': 202570, 'title': 'test-001', 'amount': 200000.0, 'loan_rate': 10.0, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-10-28 16:43:47.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+ft6_4: {'code': 0, 'msg': 'OK', 'data': {'id': 13063, 'member_id': 324353, 'title': 'test-001', 'amount': 200000.0, 'loan_rate': 10.0, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2022-06-09 10:30:14.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+用例[审核失败--项目id已经审核过]——&gt;预期结果是:{'code': 2, 'msg': '项目不在审核中状态'}，
+实际结果是:{'code': 2, 'msg': '项目不存在', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+Traceback (most recent call last):
+  File "H:\AutoApiTest\Project\lib\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "H:\AutoApiTest\Project\testcases\test_06_audit.py", line 133, in test_audit
+    raise e
+  File "H:\AutoApiTest\Project\testcases\test_06_audit.py", line 126, in test_audit
+    self.assertEqual(case_expected["msg"], result.json()["msg"])
+AssertionError: '项目不在审核中状态' != '项目不存在'
+- 项目不在审核中状态
++ 项目不存在
+
 
 
     </pre>
@@ -851,7 +755,7 @@ pt6_4: {'code': 0, 'msg': 'OK', 'data': {'id': 41949, 'member_id': 202570, 'titl
     <div id='div_pt6_5' class="collapse in" align="left">
     <pre>
     
-pt6_5: {'code': 0, 'msg': 'OK', 'data': {'id': 41950, 'member_id': 202570, 'title': 'test-001', 'amount': 200000.0, 'loan_rate': 10.0, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-10-28 16:43:48.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+pt6_5: {'code': 0, 'msg': 'OK', 'data': {'id': 13064, 'member_id': 324353, 'title': 'test-001', 'amount': 200000.0, 'loan_rate': 10.0, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2022-06-09 10:30:14.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
 
 
     </pre>
@@ -870,15 +774,15 @@ pt6_5: {'code': 0, 'msg': 'OK', 'data': {'id': 41950, 'member_id': 202570, 'titl
     <div id='div_ft6_6' class="collapse in" align="left">
     <pre>
     
-ft6_6: {'code': 0, 'msg': 'OK', 'data': {'id': 41951, 'member_id': 202570, 'title': 'test-001', 'amount': 200000.0, 'loan_rate': 10.0, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-10-28 16:43:48.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+ft6_6: {'code': 0, 'msg': 'OK', 'data': {'id': 13065, 'member_id': 324353, 'title': 'test-001', 'amount': 200000.0, 'loan_rate': 10.0, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2022-06-09 10:30:14.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
 用例[审核失败--审核状态不是布尔值]——&gt;预期结果是:{'code': 2, 'msg': 'approved_or_not只能为true或者false'}，
-实际结果是:{'code': 1, 'msg': 'approved_or_not只能为true或者false', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+实际结果是:{'code': 1, 'msg': 'approved_or_not只能为true或者false', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
 Traceback (most recent call last):
-  File "E:\Py24\Project\lib\ddt.py", line 145, in wrapper
+  File "H:\AutoApiTest\Project\lib\ddt.py", line 145, in wrapper
     return func(self, *args, **kwargs)
-  File "E:\Py24\Project\testcases\test_06_audit.py", line 133, in test_audit
+  File "H:\AutoApiTest\Project\testcases\test_06_audit.py", line 133, in test_audit
     raise e
-  File "E:\Py24\Project\testcases\test_06_audit.py", line 125, in test_audit
+  File "H:\AutoApiTest\Project\testcases\test_06_audit.py", line 125, in test_audit
     self.assertEqual(case_expected["code"], result.json()["code"])
 AssertionError: 2 != 1
 
@@ -899,7 +803,7 @@ AssertionError: 2 != 1
     <div id='div_pt6_7' class="collapse in" align="left">
     <pre>
     
-pt6_7: {'code': 0, 'msg': 'OK', 'data': {'id': 41952, 'member_id': 202570, 'title': 'test-001', 'amount': 200000.0, 'loan_rate': 10.0, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-10-28 16:43:48.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+pt6_7: {'code': 0, 'msg': 'OK', 'data': {'id': 13066, 'member_id': 324353, 'title': 'test-001', 'amount': 200000.0, 'loan_rate': 10.0, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2022-06-09 10:30:15.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
 
 
     </pre>
@@ -968,13 +872,13 @@ pt6_7: {'code': 0, 'msg': 'OK', 'data': {'id': 41952, 'member_id': 202570, 'titl
     <pre>
     
 ft7_9: 用例[投资失败--投资金额大于剩余所需金额]——&gt;预期结果是:{'code': 2, 'msg': '该标可投金额不足,可投金额：18000.0'}，
-实际结果是:{'code': 2, 'msg': '该标可投金额不足,可投金额：199800.0', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+实际结果是:{'code': 2, 'msg': '该标可投金额不足,可投金额：199800.0', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
 Traceback (most recent call last):
-  File "E:\Py24\Project\lib\ddt.py", line 145, in wrapper
+  File "H:\AutoApiTest\Project\lib\ddt.py", line 145, in wrapper
     return func(self, *args, **kwargs)
-  File "E:\Py24\Project\testcases\test_07_invest.py", line 133, in test_invest
+  File "H:\AutoApiTest\Project\testcases\test_07_invest.py", line 133, in test_invest
     raise e
-  File "E:\Py24\Project\testcases\test_07_invest.py", line 126, in test_invest
+  File "H:\AutoApiTest\Project\testcases\test_07_invest.py", line 126, in test_invest
     self.assertEqual(case_expected["msg"], result.json()["msg"])
 AssertionError: '该标可投金额不足,可投金额：18000.0' != '该标可投金额不足,可投金额：199800.0'
 - 该标可投金额不足,可投金额：18000.0
@@ -996,11 +900,11 @@ AssertionError: '该标可投金额不足,可投金额：18000.0' != '该标可�
 
 <tr id='total_row' class="text-center active">
     <td>总计</td>
-    <td>83</td>
-    <td>71</td>
-    <td>10</td>
-    <td>2</td>
-    <td>通过率：85.54%</td>
+    <td>72</td>
+    <td>62</td>
+    <td>7</td>
+    <td>3</td>
+    <td>通过率：86.11%</td>
 </tr>
 </table>
 
